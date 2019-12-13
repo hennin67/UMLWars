@@ -1,0 +1,99 @@
+\hypertarget{_vector_8h}{}\section{Vector.\+h File Reference}
+\label{_vector_8h}\index{Vector.h@{Vector.h}}
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{class_c_vector}{C\+Vector}}
+\begin{DoxyCompactList}\small\item\em Simple 2D vector class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \mbox{\hyperlink{_vector_8h_a11ab1f912f653548f09b1eccb0ab2bd6}{operator+}} (const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&a, const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&b)
+\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \mbox{\hyperlink{_vector_8h_a1aeef4f08ee5fd03fad602eea2cdd835}{operator-\/}} (const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&a, const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&b)
+\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \mbox{\hyperlink{_vector_8h_a1eb56240a15d59577289c7dbeb31013c}{operator/}} (const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&a, double d)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+\begin{DoxyAuthor}{Author}
+Team Zuse
+\end{DoxyAuthor}
+Simple 2D vector class 
+
+\subsection{Function Documentation}
+\mbox{\Hypertarget{_vector_8h_a11ab1f912f653548f09b1eccb0ab2bd6}\label{_vector_8h_a11ab1f912f653548f09b1eccb0ab2bd6}} 
+\index{Vector.h@{Vector.h}!operator+@{operator+}}
+\index{operator+@{operator+}!Vector.h@{Vector.h}}
+\subsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} operator+ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{b }\end{DoxyParamCaption})}
+
+Operator + Compute the sum of two vectors
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(3, 7);}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} b(7, 9);}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} c = a + b;   \textcolor{comment}{// c is (10, 16)}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & First vector operand \\
+\hline
+{\em b} & Second vector operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a + b 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vector_8h_a1aeef4f08ee5fd03fad602eea2cdd835}\label{_vector_8h_a1aeef4f08ee5fd03fad602eea2cdd835}} 
+\index{Vector.h@{Vector.h}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!Vector.h@{Vector.h}}
+\subsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} operator-\/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{a,  }\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{b }\end{DoxyParamCaption})}
+
+Operator -\/ Compute the subtraction of two vectors
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(3, 7);}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} b(7, 9);}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} c = a - b;   \textcolor{comment}{// c is (-2, -4)}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & First vector operand \\
+\hline
+{\em b} & Second vector operand \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a + b 
+\end{DoxyReturn}
+\mbox{\Hypertarget{_vector_8h_a1eb56240a15d59577289c7dbeb31013c}\label{_vector_8h_a1eb56240a15d59577289c7dbeb31013c}} 
+\index{Vector.h@{Vector.h}!operator/@{operator/}}
+\index{operator/@{operator/}!Vector.h@{Vector.h}}
+\subsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} operator/ (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{a,  }\item[{double}]{d }\end{DoxyParamCaption})}
+
+Operator /
+
+Computes vector a / scalar d
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(3, 7);}
+\DoxyCodeLine{\textcolor{keywordtype}{double} d = 3;}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} b = a / d;  \textcolor{comment}{// b is (1, 2.3333)}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & Vector to divide \\
+\hline
+{\em d} & Scalar to divide by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+a / d 
+\end{DoxyReturn}
