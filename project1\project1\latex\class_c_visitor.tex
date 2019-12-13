@@ -1,0 +1,83 @@
+\hypertarget{class_c_visitor}{}\section{C\+Visitor Class Reference}
+\label{class_c_visitor}\index{CVisitor@{CVisitor}}
+
+
+{\ttfamily \#include $<$Visitor.\+h$>$}
+
+Inheritance diagram for C\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_visitor_ad0d5cf07dd3a39883287f8922499082a}\label{class_c_visitor_ad0d5cf07dd3a39883287f8922499082a}} 
+virtual \mbox{\hyperlink{class_c_visitor_ad0d5cf07dd3a39883287f8922499082a}{$\sim$\+C\+Visitor}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_visitor_ab4ba1c148a5672a48a40596e9ac5a72c}{Visit\+Pen}} (\mbox{\hyperlink{class_c_pens}{C\+Pens}} $\ast$pen)
+\item 
+virtual void \mbox{\hyperlink{class_c_visitor_abf6343050ae9c2f2526fa6a17ec891a2}{Visit\+Uml}} (\mbox{\hyperlink{class_c_uml_box}{C\+Uml\+Box}} $\ast$uml)
+\item 
+virtual void \mbox{\hyperlink{class_c_visitor_af177b31b3af36c3eeb8eb70fef63a75c}{Visit\+Player}} (\mbox{\hyperlink{class_c_player}{C\+Player}} $\ast$player)
+\item 
+\mbox{\Hypertarget{class_c_visitor_aaab0055438c2be54671d5204b61a0541}\label{class_c_visitor_aaab0055438c2be54671d5204b61a0541}} 
+virtual void \mbox{\hyperlink{class_c_visitor_aaab0055438c2be54671d5204b61a0541}{Reset}} ()=0
+\begin{DoxyCompactList}\small\item\em Resets all data for the visitor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Visitor base class 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_visitor_ab4ba1c148a5672a48a40596e9ac5a72c}\label{class_c_visitor_ab4ba1c148a5672a48a40596e9ac5a72c}} 
+\index{CVisitor@{CVisitor}!VisitPen@{VisitPen}}
+\index{VisitPen@{VisitPen}!CVisitor@{CVisitor}}
+\subsubsection{\texorpdfstring{VisitPen()}{VisitPen()}}
+{\footnotesize\ttfamily virtual void C\+Visitor\+::\+Visit\+Pen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_pens}{C\+Pens}} $\ast$}]{pen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Visit a \mbox{\hyperlink{class_c_pens}{C\+Pens}} object 
+\begin{DoxyParams}{Parameters}
+{\em pen} & Pen we are visiting \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_is_pen_visitor_ae48fb8bb94e5d10877ad5669df4bb86c}{C\+Is\+Pen\+Visitor}}.
+
+\mbox{\Hypertarget{class_c_visitor_af177b31b3af36c3eeb8eb70fef63a75c}\label{class_c_visitor_af177b31b3af36c3eeb8eb70fef63a75c}} 
+\index{CVisitor@{CVisitor}!VisitPlayer@{VisitPlayer}}
+\index{VisitPlayer@{VisitPlayer}!CVisitor@{CVisitor}}
+\subsubsection{\texorpdfstring{VisitPlayer()}{VisitPlayer()}}
+{\footnotesize\ttfamily virtual void C\+Visitor\+::\+Visit\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_player}{C\+Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Visit a \mbox{\hyperlink{class_c_player}{C\+Player}} object 
+\begin{DoxyParams}{Parameters}
+{\em player} & the Player we are visiting \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_is_player_visitor_ade10af41a195ead29f30ed6fffb4c3bd}{C\+Is\+Player\+Visitor}}.
+
+\mbox{\Hypertarget{class_c_visitor_abf6343050ae9c2f2526fa6a17ec891a2}\label{class_c_visitor_abf6343050ae9c2f2526fa6a17ec891a2}} 
+\index{CVisitor@{CVisitor}!VisitUml@{VisitUml}}
+\index{VisitUml@{VisitUml}!CVisitor@{CVisitor}}
+\subsubsection{\texorpdfstring{VisitUml()}{VisitUml()}}
+{\footnotesize\ttfamily virtual void C\+Visitor\+::\+Visit\+Uml (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_uml_box}{C\+Uml\+Box}} $\ast$}]{uml }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Visit a C\+Uml object 
+\begin{DoxyParams}{Parameters}
+{\em uml} & U\+ML box we are visiting \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_is_bad_uml_visitor_a749753fc1c57d534faf60a016a4fd745}{C\+Is\+Bad\+Uml\+Visitor}}, and \mbox{\hyperlink{class_c_is_uml_visitor_ac49fb3a73f9949c21faf54d92d366b7c}{C\+Is\+Uml\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_visitor_8h}{Visitor.\+h}}\end{DoxyCompactItemize}

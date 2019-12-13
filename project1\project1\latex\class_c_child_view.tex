@@ -1,0 +1,209 @@
+\hypertarget{class_c_child_view}{}\section{C\+Child\+View Class Reference}
+\label{class_c_child_view}\index{CChildView@{CChildView}}
+
+
+{\ttfamily \#include $<$Child\+View.\+h$>$}
+
+Inheritance diagram for C\+Child\+View\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_child_view}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_child_view_a581600c4abfff94f3da324f4c2724e0a}\label{class_c_child_view_a581600c4abfff94f3da324f4c2724e0a}} 
+enum \mbox{\hyperlink{class_c_child_view_a581600c4abfff94f3da324f4c2724e0a}{Levels}} \{ {\bfseries Easy}, 
+{\bfseries Normal}, 
+{\bfseries Hard}
+ \}
+\begin{DoxyCompactList}\small\item\em Possible levels to choose from. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_child_view_aff5af7c162c10755edbe58f260ded6d4}\label{class_c_child_view_aff5af7c162c10755edbe58f260ded6d4}} 
+\mbox{\hyperlink{class_c_child_view_aff5af7c162c10755edbe58f260ded6d4}{C\+Child\+View}} ()
+\begin{DoxyCompactList}\small\item\em constructor \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_child_view_a5b033b5e0a130950719a173b86418698}\label{class_c_child_view_a5b033b5e0a130950719a173b86418698}} 
+virtual \mbox{\hyperlink{class_c_child_view_a5b033b5e0a130950719a173b86418698}{$\sim$\+C\+Child\+View}} ()
+\begin{DoxyCompactList}\small\item\em deconstructor \end{DoxyCompactList}\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_aa6859229c37062c75e80ffc41aaeb2dd}{On\+File\+Pause}} ()
+\item 
+afx\+\_\+msg B\+O\+OL \mbox{\hyperlink{class_c_child_view_a6060e6d09d522d345dcee5a01d41c1f0}{On\+Erase\+Bkgnd}} (C\+DC $\ast$p\+DC)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_ad3cb2f8d9fa9a6fb06989513dee5a8bc}{On\+Mouse\+Move}} (U\+I\+NT n\+Flags, C\+Point point)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_a4c6bb8bd631cee84bb80c948f3d6d98a}{On\+Timer}} (U\+I\+N\+T\+\_\+\+P\+TR n\+I\+D\+Event)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_af513a57c45ce8b9dcc09dd934e228534}{On\+L\+Button\+Down}} (U\+I\+NT n\+Flags, C\+Point point)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_a8aa93825b42eb316b550b11d7643c058}{On\+Update\+File\+Pause}} (C\+Cmd\+UI $\ast$p\+Cmd\+UI)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_a881809e1f085e134ddb31a76cb7b72d4}{On\+Update\+Difficulty\+Easy}} (C\+Cmd\+UI $\ast$p\+Cmd\+UI)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_ac93835b94a1adc88c8e91d04e1ae0cb2}{On\+Update\+Difficulty\+Normal}} (C\+Cmd\+UI $\ast$p\+Cmd\+UI)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_a77809df4958d80ea45a09c4d3f3412e7}{On\+Update\+Difficulty\+Hard}} (C\+Cmd\+UI $\ast$p\+Cmd\+UI)
+\item 
+\mbox{\Hypertarget{class_c_child_view_ac1883ad109d043e758e6e51838505c7e}\label{class_c_child_view_ac1883ad109d043e758e6e51838505c7e}} 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_ac1883ad109d043e758e6e51838505c7e}{On\+Difficulty\+Easy}} ()
+\begin{DoxyCompactList}\small\item\em Handler for when Easy difficulty is selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_child_view_a449fed8583aed34b806b8d68e59c9743}\label{class_c_child_view_a449fed8583aed34b806b8d68e59c9743}} 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_a449fed8583aed34b806b8d68e59c9743}{On\+Difficulty\+Normal}} ()
+\begin{DoxyCompactList}\small\item\em Handler for when Normal difficulty is selected. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_child_view_a30b428c1ef383c8d4e91f1bab8c53f42}\label{class_c_child_view_a30b428c1ef383c8d4e91f1bab8c53f42}} 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_a30b428c1ef383c8d4e91f1bab8c53f42}{On\+Difficulty\+Hard}} ()
+\begin{DoxyCompactList}\small\item\em Handler for when Hard difficulty is selected. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual B\+O\+OL \mbox{\hyperlink{class_c_child_view_a07e87a6c3606422ff10d45a47d702c7e}{Pre\+Create\+Window}} (C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+CT \&cs)
+\item 
+afx\+\_\+msg void \mbox{\hyperlink{class_c_child_view_a8ea6d42631a4f9f446923ff864b239ab}{On\+Paint}} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for Child\+View 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_child_view_a6060e6d09d522d345dcee5a01d41c1f0}\label{class_c_child_view_a6060e6d09d522d345dcee5a01d41c1f0}} 
+\index{CChildView@{CChildView}!OnEraseBkgnd@{OnEraseBkgnd}}
+\index{OnEraseBkgnd@{OnEraseBkgnd}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnEraseBkgnd()}{OnEraseBkgnd()}}
+{\footnotesize\ttfamily B\+O\+OL C\+Child\+View\+::\+On\+Erase\+Bkgnd (\begin{DoxyParamCaption}\item[{C\+DC $\ast$}]{p\+DC }\end{DoxyParamCaption})}
+
+Erase the background
+
+This is disabled to eliminate flicker 
+\begin{DoxyParams}{Parameters}
+{\em p\+DC} & Device context \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+F\+A\+L\+SE 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_child_view_aa6859229c37062c75e80ffc41aaeb2dd}\label{class_c_child_view_aa6859229c37062c75e80ffc41aaeb2dd}} 
+\index{CChildView@{CChildView}!OnFilePause@{OnFilePause}}
+\index{OnFilePause@{OnFilePause}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnFilePause()}{OnFilePause()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+File\+Pause (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+This function is called to pause the window
+
+This function is called in response to a pause message It is responsible for changing the window to a pause screen \& saving state of the game. \mbox{\Hypertarget{class_c_child_view_af513a57c45ce8b9dcc09dd934e228534}\label{class_c_child_view_af513a57c45ce8b9dcc09dd934e228534}} 
+\index{CChildView@{CChildView}!OnLButtonDown@{OnLButtonDown}}
+\index{OnLButtonDown@{OnLButtonDown}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnLButtonDown()}{OnLButtonDown()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+L\+Button\+Down (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{n\+Flags,  }\item[{C\+Point}]{point }\end{DoxyParamCaption})}
+
+Shoot pen on left button click
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Flags} & device flags \\
+\hline
+{\em point} & vector mouse position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_child_view_ad3cb2f8d9fa9a6fb06989513dee5a8bc}\label{class_c_child_view_ad3cb2f8d9fa9a6fb06989513dee5a8bc}} 
+\index{CChildView@{CChildView}!OnMouseMove@{OnMouseMove}}
+\index{OnMouseMove@{OnMouseMove}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnMouseMove()}{OnMouseMove()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+Mouse\+Move (\begin{DoxyParamCaption}\item[{U\+I\+NT}]{n\+Flags,  }\item[{C\+Point}]{point }\end{DoxyParamCaption})}
+
+Set Harold\textquotesingle{}s angle according to mouse x position
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+Flags} & device flags \\
+\hline
+{\em point} & vector mouse position \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_child_view_a8ea6d42631a4f9f446923ff864b239ab}\label{class_c_child_view_a8ea6d42631a4f9f446923ff864b239ab}} 
+\index{CChildView@{CChildView}!OnPaint@{OnPaint}}
+\index{OnPaint@{OnPaint}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnPaint()}{OnPaint()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+Paint (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+This function is called to draw in the window.
+
+This function is called in response to a drawing message whenever we need to redraw the window on the screen. It is responsible for painting the window. \mbox{\Hypertarget{class_c_child_view_a4c6bb8bd631cee84bb80c948f3d6d98a}\label{class_c_child_view_a4c6bb8bd631cee84bb80c948f3d6d98a}} 
+\index{CChildView@{CChildView}!OnTimer@{OnTimer}}
+\index{OnTimer@{OnTimer}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnTimer()}{OnTimer()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+Timer (\begin{DoxyParamCaption}\item[{U\+I\+N\+T\+\_\+\+P\+TR}]{n\+I\+D\+Event }\end{DoxyParamCaption})}
+
+Redraw screen on timer -\/ state driven program
+
+
+\begin{DoxyParams}{Parameters}
+{\em n\+I\+D\+Event} & device event \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_child_view_a881809e1f085e134ddb31a76cb7b72d4}\label{class_c_child_view_a881809e1f085e134ddb31a76cb7b72d4}} 
+\index{CChildView@{CChildView}!OnUpdateDifficultyEasy@{OnUpdateDifficultyEasy}}
+\index{OnUpdateDifficultyEasy@{OnUpdateDifficultyEasy}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnUpdateDifficultyEasy()}{OnUpdateDifficultyEasy()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+Update\+Difficulty\+Easy (\begin{DoxyParamCaption}\item[{C\+Cmd\+UI $\ast$}]{p\+Cmd\+UI }\end{DoxyParamCaption})}
+
+Check box handler for Easy difficulty 
+\begin{DoxyParams}{Parameters}
+{\em p\+Cmd\+UI} & Check box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_child_view_a77809df4958d80ea45a09c4d3f3412e7}\label{class_c_child_view_a77809df4958d80ea45a09c4d3f3412e7}} 
+\index{CChildView@{CChildView}!OnUpdateDifficultyHard@{OnUpdateDifficultyHard}}
+\index{OnUpdateDifficultyHard@{OnUpdateDifficultyHard}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnUpdateDifficultyHard()}{OnUpdateDifficultyHard()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+Update\+Difficulty\+Hard (\begin{DoxyParamCaption}\item[{C\+Cmd\+UI $\ast$}]{p\+Cmd\+UI }\end{DoxyParamCaption})}
+
+Checkbox handler for Hard difficulty 
+\begin{DoxyParams}{Parameters}
+{\em p\+Cmd\+UI} & Check box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_child_view_ac93835b94a1adc88c8e91d04e1ae0cb2}\label{class_c_child_view_ac93835b94a1adc88c8e91d04e1ae0cb2}} 
+\index{CChildView@{CChildView}!OnUpdateDifficultyNormal@{OnUpdateDifficultyNormal}}
+\index{OnUpdateDifficultyNormal@{OnUpdateDifficultyNormal}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnUpdateDifficultyNormal()}{OnUpdateDifficultyNormal()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+Update\+Difficulty\+Normal (\begin{DoxyParamCaption}\item[{C\+Cmd\+UI $\ast$}]{p\+Cmd\+UI }\end{DoxyParamCaption})}
+
+Check box handler for Normal difficulty 
+\begin{DoxyParams}{Parameters}
+{\em p\+Cmd\+UI} & Check box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_child_view_a8aa93825b42eb316b550b11d7643c058}\label{class_c_child_view_a8aa93825b42eb316b550b11d7643c058}} 
+\index{CChildView@{CChildView}!OnUpdateFilePause@{OnUpdateFilePause}}
+\index{OnUpdateFilePause@{OnUpdateFilePause}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{OnUpdateFilePause()}{OnUpdateFilePause()}}
+{\footnotesize\ttfamily void C\+Child\+View\+::\+On\+Update\+File\+Pause (\begin{DoxyParamCaption}\item[{C\+Cmd\+UI $\ast$}]{p\+Cmd\+UI }\end{DoxyParamCaption})}
+
+Check box handler for pause 
+\begin{DoxyParams}{Parameters}
+{\em p\+Cmd\+UI} & Check box \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_child_view_a07e87a6c3606422ff10d45a47d702c7e}\label{class_c_child_view_a07e87a6c3606422ff10d45a47d702c7e}} 
+\index{CChildView@{CChildView}!PreCreateWindow@{PreCreateWindow}}
+\index{PreCreateWindow@{PreCreateWindow}!CChildView@{CChildView}}
+\subsubsection{\texorpdfstring{PreCreateWindow()}{PreCreateWindow()}}
+{\footnotesize\ttfamily B\+O\+OL C\+Child\+View\+::\+Pre\+Create\+Window (\begin{DoxyParamCaption}\item[{C\+R\+E\+A\+T\+E\+S\+T\+R\+U\+CT \&}]{cs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}, {\ttfamily [virtual]}}
+
+This function is called before the window is created. 
+\begin{DoxyParams}{Parameters}
+{\em cs} & A structure with the window creation parameters \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+T\+R\+UE 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_child_view_8h}{Child\+View.\+h}}\item 
+\mbox{\hyperlink{_child_view_8cpp}{Child\+View.\+cpp}}\end{DoxyCompactItemize}

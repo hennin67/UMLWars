@@ -1,0 +1,322 @@
+\hypertarget{class_c_vector}{}\section{C\+Vector Class Reference}
+\label{class_c_vector}\index{CVector@{CVector}}
+
+
+Simple 2D vector class.  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_vector_a4c3513341ee5fc6d1e98d8af801571b0}{C\+Vector}} (double x, double y)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_vector_a0f8bc94615cdb6e7c2016ac33c397197}{C\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em ? = delete \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_vector_a29b5b40a40c27f7fbdd873fc0d5e47fa}{$\sim$\+C\+Vector}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \mbox{\hyperlink{class_c_vector_aaf9d43b1bf62c92b22397b3a1c04bb80}{operator $\ast$}} (double d) const
+\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \& \mbox{\hyperlink{class_c_vector_ad763976883abeeb02a288a71127d8b4a}{operator+=}} (const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&a)
+\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \& \mbox{\hyperlink{class_c_vector_a9c83839672581c678b3017b3e411dd4b}{operator $\ast$=}} (double d)
+\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \& \mbox{\hyperlink{class_c_vector_ae14a09fe402abf99e4a2f954bf7d153c}{operator/=}} (double d)
+\item 
+double \mbox{\hyperlink{class_c_vector_adb4201d69d28335e4778db12a63334dd}{X}} () const
+\item 
+double \mbox{\hyperlink{class_c_vector_a2307d1e05707ac82685fc5b7ec92df22}{Y}} () const
+\item 
+void \mbox{\hyperlink{class_c_vector_a0d188ac1b8da71257bea3854d7f1f6b7}{Set}} (double x, double y)
+\item 
+void \mbox{\hyperlink{class_c_vector_a8478e276e69c84e9d10850bf0dd0a07a}{Set}} (const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&x)
+\item 
+void \mbox{\hyperlink{class_c_vector_a52453e778416ff304b9686389869e33c}{SetX}} (double x)
+\item 
+void \mbox{\hyperlink{class_c_vector_af4527b22d2d04f9218802b55c4a12f77}{SetY}} (double y)
+\item 
+double \mbox{\hyperlink{class_c_vector_ac5a1307d7d4fe0122fba34448483fd5d}{Length}} () const
+\begin{DoxyCompactList}\small\item\em Length constant. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_vector_a3b81ff3e8be09903b271d6712e1ffa0d}{Distance}} (const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&other) const
+\begin{DoxyCompactList}\small\item\em Distance constant. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_vector}{C\+Vector}} \& \mbox{\hyperlink{class_c_vector_a843889621cc1fec46c763ed323f14628}{Normalize}} ()
+\begin{DoxyCompactList}\small\item\em Normalizes vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Simple 2D vector class. 
+
+This class implements vector operations and operator overloading to simplify the use of 2d vectors in a C++ program. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_vector_a4c3513341ee5fc6d1e98d8af801571b0}\label{class_c_vector_a4c3513341ee5fc6d1e98d8af801571b0}} 
+\index{CVector@{CVector}!CVector@{CVector}}
+\index{CVector@{CVector}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{CVector()}{CVector()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily C\+Vector\+::\+C\+Vector (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor
+
+This constructor allows you to specify an initial value
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Initial x value \\
+\hline
+{\em y} & Initial y value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_vector_a0f8bc94615cdb6e7c2016ac33c397197}\label{class_c_vector_a0f8bc94615cdb6e7c2016ac33c397197}} 
+\index{CVector@{CVector}!CVector@{CVector}}
+\index{CVector@{CVector}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{CVector()}{CVector()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily C\+Vector\+::\+C\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+? = delete 
+
+Constructor
+
+The default constructor creates a zero vector. \mbox{\Hypertarget{class_c_vector_a29b5b40a40c27f7fbdd873fc0d5e47fa}\label{class_c_vector_a29b5b40a40c27f7fbdd873fc0d5e47fa}} 
+\index{CVector@{CVector}!````~CVector@{$\sim$CVector}}
+\index{````~CVector@{$\sim$CVector}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{$\sim$CVector()}{~CVector()}}
+{\footnotesize\ttfamily C\+Vector\+::$\sim$\+C\+Vector (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor. 
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_vector_a3b81ff3e8be09903b271d6712e1ffa0d}\label{class_c_vector_a3b81ff3e8be09903b271d6712e1ffa0d}} 
+\index{CVector@{CVector}!Distance@{Distance}}
+\index{Distance@{Distance}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily double C\+Vector\+::\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{other }\end{DoxyParamCaption}) const}
+
+
+
+Distance constant. 
+
+Compute distance from a vector to another vector
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(1, 2);}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} b(5, 3);}
+\DoxyCodeLine{\textcolor{keywordtype}{double} distance = a.Distance(b);  \textcolor{comment}{// distance = 4.1231}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em other} & Other vector to test against \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Distance between vectors 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_ac5a1307d7d4fe0122fba34448483fd5d}\label{class_c_vector_ac5a1307d7d4fe0122fba34448483fd5d}} 
+\index{CVector@{CVector}!Length@{Length}}
+\index{Length@{Length}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{Length()}{Length()}}
+{\footnotesize\ttfamily double C\+Vector\+::\+Length (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Length constant. 
+
+Compute the length of a vector assuming a Euclidian norm
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(3, 7);}
+\DoxyCodeLine{\textcolor{keywordtype}{double} len = a.Length();   \textcolor{comment}{// len = 7.6158}}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+Vector length 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_a843889621cc1fec46c763ed323f14628}\label{class_c_vector_a843889621cc1fec46c763ed323f14628}} 
+\index{CVector@{CVector}!Normalize@{Normalize}}
+\index{Normalize@{Normalize}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{Normalize()}{Normalize()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} \& C\+Vector\+::\+Normalize (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Normalizes vector. 
+
+Normalize this vector to a length of 1.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(12.2, 1.7);}
+\DoxyCodeLine{a.Normalize();   \textcolor{comment}{// a is now (0.9904, 0.1380)}}
+\end{DoxyCode}
+ \begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_aaf9d43b1bf62c92b22397b3a1c04bb80}\label{class_c_vector_aaf9d43b1bf62c92b22397b3a1c04bb80}} 
+\index{CVector@{CVector}!operator $\ast$@{operator $\ast$}}
+\index{operator $\ast$@{operator $\ast$}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{operator $\ast$()}{operator *()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} C\+Vector\+::operator $\ast$ (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption}) const}
+
+Computer scalar multiply of vector $\ast$ scalar 
+\begin{DoxyParams}{Parameters}
+{\em d} & Value to multiply by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+($\ast$this) $\ast$ d 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_a9c83839672581c678b3017b3e411dd4b}\label{class_c_vector_a9c83839672581c678b3017b3e411dd4b}} 
+\index{CVector@{CVector}!operator $\ast$=@{operator $\ast$=}}
+\index{operator $\ast$=@{operator $\ast$=}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{operator $\ast$=()}{operator *=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} \& C\+Vector\+::operator $\ast$= (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+Operator $\ast$= for scalar values
+
+Multiplies a vector by a scalar value
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(7, 3)}
+\DoxyCodeLine{double d = 0.5;}
+\DoxyCodeLine{a *= d;   \textcolor{comment}{// a is now (3.5, 1.5)}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em d} & Scalar to multiply by this vector. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_ad763976883abeeb02a288a71127d8b4a}\label{class_c_vector_ad763976883abeeb02a288a71127d8b4a}} 
+\index{CVector@{CVector}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} \& C\+Vector\+::operator+= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{a }\end{DoxyParamCaption})}
+
+Operator +=
+
+Adds a vector to an existing vector.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(7, 3);}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} b(3, 9);}
+\DoxyCodeLine{a += b;     \textcolor{comment}{// a is now equal to (10, 12)}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em a} & Value to add to current object \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_ae14a09fe402abf99e4a2f954bf7d153c}\label{class_c_vector_ae14a09fe402abf99e4a2f954bf7d153c}} 
+\index{CVector@{CVector}!operator/=@{operator/=}}
+\index{operator/=@{operator/=}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{operator/=()}{operator/=()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_c_vector}{C\+Vector}} \& C\+Vector\+::operator/= (\begin{DoxyParamCaption}\item[{double}]{d }\end{DoxyParamCaption})}
+
+Operator /=
+
+Divides a vector by a scalar value
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\mbox{\hyperlink{class_c_vector}{CVector}} a(3, 7);}
+\DoxyCodeLine{\textcolor{keywordtype}{double} d = 3;}
+\DoxyCodeLine{a /= d;       \textcolor{comment}{// a is now (1, 2.3333)}}
+\end{DoxyCode}
+ 
+\begin{DoxyParams}{Parameters}
+{\em d} & Scalar to divide by \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+$\ast$this 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_a0d188ac1b8da71257bea3854d7f1f6b7}\label{class_c_vector_a0d188ac1b8da71257bea3854d7f1f6b7}} 
+\index{CVector@{CVector}!Set@{Set}}
+\index{Set@{Set}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily void C\+Vector\+::\+Set (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the vector 
+\begin{DoxyParams}{Parameters}
+{\em x} & X value \\
+\hline
+{\em y} & Y value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_vector_a8478e276e69c84e9d10850bf0dd0a07a}\label{class_c_vector_a8478e276e69c84e9d10850bf0dd0a07a}} 
+\index{CVector@{CVector}!Set@{Set}}
+\index{Set@{Set}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{Set()}{Set()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily void C\+Vector\+::\+Set (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{class_c_vector}{C\+Vector}} \&}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the vector from another vector 
+\begin{DoxyParams}{Parameters}
+{\em x} & Other vector \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_vector_a52453e778416ff304b9686389869e33c}\label{class_c_vector_a52453e778416ff304b9686389869e33c}} 
+\index{CVector@{CVector}!SetX@{SetX}}
+\index{SetX@{SetX}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{SetX()}{SetX()}}
+{\footnotesize\ttfamily void C\+Vector\+::\+SetX (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the X component of the vector 
+\begin{DoxyParams}{Parameters}
+{\em x} & X value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_vector_af4527b22d2d04f9218802b55c4a12f77}\label{class_c_vector_af4527b22d2d04f9218802b55c4a12f77}} 
+\index{CVector@{CVector}!SetY@{SetY}}
+\index{SetY@{SetY}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{SetY()}{SetY()}}
+{\footnotesize\ttfamily void C\+Vector\+::\+SetY (\begin{DoxyParamCaption}\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the Y component of the vector 
+\begin{DoxyParams}{Parameters}
+{\em y} & Y value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_vector_adb4201d69d28335e4778db12a63334dd}\label{class_c_vector_adb4201d69d28335e4778db12a63334dd}} 
+\index{CVector@{CVector}!X@{X}}
+\index{X@{X}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{X()}{X()}}
+{\footnotesize\ttfamily double C\+Vector\+::X (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the X value \begin{DoxyReturn}{Returns}
+X 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_vector_a2307d1e05707ac82685fc5b7ec92df22}\label{class_c_vector_a2307d1e05707ac82685fc5b7ec92df22}} 
+\index{CVector@{CVector}!Y@{Y}}
+\index{Y@{Y}!CVector@{CVector}}
+\subsubsection{\texorpdfstring{Y()}{Y()}}
+{\footnotesize\ttfamily double C\+Vector\+::Y (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the Y value \begin{DoxyReturn}{Returns}
+Y 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_vector_8h}{Vector.\+h}}\item 
+\mbox{\hyperlink{_vector_8cpp}{Vector.\+cpp}}\end{DoxyCompactItemize}

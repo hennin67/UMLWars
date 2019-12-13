@@ -1,0 +1,131 @@
+\hypertarget{class_c_image_object}{}\section{C\+Image\+Object Class Reference}
+\label{class_c_image_object}\index{CImageObject@{CImageObject}}
+
+
+{\ttfamily \#include $<$Image\+Object.\+h$>$}
+
+Inheritance diagram for C\+Image\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_image_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_c_image_object_a7f550785caf6f15a5a521ee69acc03c4}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\item 
+bool \mbox{\hyperlink{class_c_image_object_a0b8db07f55fa820b3683d2a99d553120}{Hit\+Test}} (int x, int y) override
+\begin{DoxyCompactList}\small\item\em Test if the x and y coords are within the image object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_image_object_adbcb139e0a30fb3e31c70d0830723577}{Set\+Image}} (const W\+C\+H\+AR $\ast$filename)
+\item 
+void \mbox{\hyperlink{class_c_image_object_a7130a9fa130c2028aba6c28dcfc876d5}{Accept}} (\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$visitor) override
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_image_object_a64d5b8b5fa0709c28aa114c24b736419}{C\+Image\+Object}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen, const std\+::wstring \&filename, \mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}} layer)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for screen objects with an attatched image 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_image_object_a64d5b8b5fa0709c28aa114c24b736419}\label{class_c_image_object_a64d5b8b5fa0709c28aa114c24b736419}} 
+\index{CImageObject@{CImageObject}!CImageObject@{CImageObject}}
+\index{CImageObject@{CImageObject}!CImageObject@{CImageObject}}
+\subsubsection{\texorpdfstring{CImageObject()}{CImageObject()}}
+{\footnotesize\ttfamily C\+Image\+Object\+::\+C\+Image\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{screen,  }\item[{const std\+::wstring \&}]{filename,  }\item[{\mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}}}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Image object constructor 
+\begin{DoxyParams}{Parameters}
+{\em layer} & layer of the object\\
+\hline
+\end{DoxyParams}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen this item is a member of \\
+\hline
+{\em filename} & The filename of the image this object will use \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_image_object_a7130a9fa130c2028aba6c28dcfc876d5}\label{class_c_image_object_a7130a9fa130c2028aba6c28dcfc876d5}} 
+\index{CImageObject@{CImageObject}!Accept@{Accept}}
+\index{Accept@{Accept}!CImageObject@{CImageObject}}
+\subsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily void C\+Image\+Object\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Accept a visitor 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The visitor we accept \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_a1420b59508fdab637367654438223832}{C\+Screen\+Object}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_pens_a054fe093d31223c2ad66ab328e158f33}{C\+Pens}}, and \mbox{\hyperlink{class_c_player_a524a0fd1d55d4ac0a55d00d0492018f8}{C\+Player}}.
+
+\mbox{\Hypertarget{class_c_image_object_a7f550785caf6f15a5a521ee69acc03c4}\label{class_c_image_object_a7f550785caf6f15a5a521ee69acc03c4}} 
+\index{CImageObject@{CImageObject}!Draw@{Draw}}
+\index{Draw@{Draw}!CImageObject@{CImageObject}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Image\+Object\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Draws the image object to the parameter graphics 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & the graphics to draw to \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_ad9481ae325ca2374986c61fb6545fbe2}{C\+Screen\+Object}}.
+
+\mbox{\Hypertarget{class_c_image_object_a0b8db07f55fa820b3683d2a99d553120}\label{class_c_image_object_a0b8db07f55fa820b3683d2a99d553120}} 
+\index{CImageObject@{CImageObject}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CImageObject@{CImageObject}}
+\subsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Image\+Object\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Test if the x and y coords are within the image object. 
+
+Test to see if we hit this object with a mouse. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position to test \\
+\hline
+{\em y} & Y position to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if hit. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_a92a3f69608fa214184c0c82a33569a07}{C\+Screen\+Object}}.
+
+\mbox{\Hypertarget{class_c_image_object_adbcb139e0a30fb3e31c70d0830723577}\label{class_c_image_object_adbcb139e0a30fb3e31c70d0830723577}} 
+\index{CImageObject@{CImageObject}!SetImage@{SetImage}}
+\index{SetImage@{SetImage}!CImageObject@{CImageObject}}
+\subsubsection{\texorpdfstring{SetImage()}{SetImage()}}
+{\footnotesize\ttfamily void C\+Image\+Object\+::\+Set\+Image (\begin{DoxyParamCaption}\item[{const W\+C\+H\+AR $\ast$}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets the image of this screen object 
+\begin{DoxyParams}{Parameters}
+{\em filename} & the filename of the image to load \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_image_object_8h}{Image\+Object.\+h}}\item 
+\mbox{\hyperlink{_image_object_8cpp}{Image\+Object.\+cpp}}\end{DoxyCompactItemize}

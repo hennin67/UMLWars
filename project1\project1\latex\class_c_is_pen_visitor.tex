@@ -1,0 +1,72 @@
+\hypertarget{class_c_is_pen_visitor}{}\section{C\+Is\+Pen\+Visitor Class Reference}
+\label{class_c_is_pen_visitor}\index{CIsPenVisitor@{CIsPenVisitor}}
+
+
+{\ttfamily \#include $<$Is\+Pen\+Visitor.\+h$>$}
+
+Inheritance diagram for C\+Is\+Pen\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_is_pen_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_is_pen_visitor_a1f6f4c1922ca5d9e6ab329fe6b271bcb}\label{class_c_is_pen_visitor_a1f6f4c1922ca5d9e6ab329fe6b271bcb}} 
+\mbox{\hyperlink{class_c_is_pen_visitor_a1f6f4c1922ca5d9e6ab329fe6b271bcb}{C\+Is\+Pen\+Visitor}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_is_pen_visitor_ae48fb8bb94e5d10877ad5669df4bb86c}{Visit\+Pen}} (\mbox{\hyperlink{class_c_pens}{C\+Pens}} $\ast$pen) override
+\item 
+bool \mbox{\hyperlink{class_c_is_pen_visitor_a6f4f830ad5b5b349448ffc6b3c6c0b2d}{Is\+Pen\+Visitor}} ()
+\item 
+bool \mbox{\hyperlink{class_c_is_pen_visitor_a1e540f3b3c1c818da26de7dd5b233dfc}{Visited\+Shot\+Pen}} ()
+\item 
+\mbox{\Hypertarget{class_c_is_pen_visitor_ab4b86002c6f48713a6f349a558c8191a}\label{class_c_is_pen_visitor_ab4b86002c6f48713a6f349a558c8191a}} 
+void \mbox{\hyperlink{class_c_is_pen_visitor_ab4b86002c6f48713a6f349a558c8191a}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Resets member data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that visits pens 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_is_pen_visitor_a6f4f830ad5b5b349448ffc6b3c6c0b2d}\label{class_c_is_pen_visitor_a6f4f830ad5b5b349448ffc6b3c6c0b2d}} 
+\index{CIsPenVisitor@{CIsPenVisitor}!IsPenVisitor@{IsPenVisitor}}
+\index{IsPenVisitor@{IsPenVisitor}!CIsPenVisitor@{CIsPenVisitor}}
+\subsubsection{\texorpdfstring{IsPenVisitor()}{IsPenVisitor()}}
+{\footnotesize\ttfamily bool C\+Is\+Pen\+Visitor\+::\+Is\+Pen\+Visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if visitor is pen visitor \begin{DoxyReturn}{Returns}
+bool m\+Is\+Pen 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_is_pen_visitor_a1e540f3b3c1c818da26de7dd5b233dfc}\label{class_c_is_pen_visitor_a1e540f3b3c1c818da26de7dd5b233dfc}} 
+\index{CIsPenVisitor@{CIsPenVisitor}!VisitedShotPen@{VisitedShotPen}}
+\index{VisitedShotPen@{VisitedShotPen}!CIsPenVisitor@{CIsPenVisitor}}
+\subsubsection{\texorpdfstring{VisitedShotPen()}{VisitedShotPen()}}
+{\footnotesize\ttfamily bool C\+Is\+Pen\+Visitor\+::\+Visited\+Shot\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if the visited object is a pen and has been shot \begin{DoxyReturn}{Returns}
+bool whether the visited object is both a pen and has been shot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_is_pen_visitor_ae48fb8bb94e5d10877ad5669df4bb86c}\label{class_c_is_pen_visitor_ae48fb8bb94e5d10877ad5669df4bb86c}} 
+\index{CIsPenVisitor@{CIsPenVisitor}!VisitPen@{VisitPen}}
+\index{VisitPen@{VisitPen}!CIsPenVisitor@{CIsPenVisitor}}
+\subsubsection{\texorpdfstring{VisitPen()}{VisitPen()}}
+{\footnotesize\ttfamily void C\+Is\+Pen\+Visitor\+::\+Visit\+Pen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_pens}{C\+Pens}} $\ast$}]{pen }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Visit pen object 
+\begin{DoxyParams}{Parameters}
+{\em pen} & the pen we\textquotesingle{}re looking at \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_visitor_ab4ba1c148a5672a48a40596e9ac5a72c}{C\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_is_pen_visitor_8h}{Is\+Pen\+Visitor.\+h}}\item 
+\mbox{\hyperlink{_is_pen_visitor_8cpp}{Is\+Pen\+Visitor.\+cpp}}\end{DoxyCompactItemize}

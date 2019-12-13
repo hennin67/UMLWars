@@ -1,0 +1,80 @@
+\hypertarget{class_c_is_uml_visitor}{}\section{C\+Is\+Uml\+Visitor Class Reference}
+\label{class_c_is_uml_visitor}\index{CIsUmlVisitor@{CIsUmlVisitor}}
+
+
+{\ttfamily \#include $<$Is\+Uml\+Visitor.\+h$>$}
+
+Inheritance diagram for C\+Is\+Uml\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_is_uml_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_is_uml_visitor_a1ae8d0ef81a5d4e6a4b7246c269ed5ee}\label{class_c_is_uml_visitor_a1ae8d0ef81a5d4e6a4b7246c269ed5ee}} 
+\mbox{\hyperlink{class_c_is_uml_visitor_a1ae8d0ef81a5d4e6a4b7246c269ed5ee}{C\+Is\+Uml\+Visitor}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_is_uml_visitor_ac49fb3a73f9949c21faf54d92d366b7c}{Visit\+Uml}} (\mbox{\hyperlink{class_c_uml_box}{C\+Uml\+Box}} $\ast$uml) override
+\item 
+bool \mbox{\hyperlink{class_c_is_uml_visitor_a5a4fad7fb8438c629ef0ff7ec171c721}{Is\+Uml\+Visitor}} ()
+\item 
+bool \mbox{\hyperlink{class_c_is_uml_visitor_a12895fb90be2171da457e2d6a524d9d2}{Is\+Old\+Uml}} ()
+\item 
+\mbox{\Hypertarget{class_c_is_uml_visitor_a3b69c2aeb8c570797ac4bc394e032aaf}\label{class_c_is_uml_visitor_a3b69c2aeb8c570797ac4bc394e032aaf}} 
+void \mbox{\hyperlink{class_c_is_uml_visitor_a3b69c2aeb8c570797ac4bc394e032aaf}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Resets member data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that visits road tiles to fix them 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_is_uml_visitor_a12895fb90be2171da457e2d6a524d9d2}\label{class_c_is_uml_visitor_a12895fb90be2171da457e2d6a524d9d2}} 
+\index{CIsUmlVisitor@{CIsUmlVisitor}!IsOldUml@{IsOldUml}}
+\index{IsOldUml@{IsOldUml}!CIsUmlVisitor@{CIsUmlVisitor}}
+\subsubsection{\texorpdfstring{IsOldUml()}{IsOldUml()}}
+{\footnotesize\ttfamily bool C\+Is\+Uml\+Visitor\+::\+Is\+Old\+Uml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks whether the U\+ML is old \begin{DoxyReturn}{Returns}
+bool m\+Is\+Uml 
+
+bool m\+Is\+Old 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_is_uml_visitor_a5a4fad7fb8438c629ef0ff7ec171c721}\label{class_c_is_uml_visitor_a5a4fad7fb8438c629ef0ff7ec171c721}} 
+\index{CIsUmlVisitor@{CIsUmlVisitor}!IsUmlVisitor@{IsUmlVisitor}}
+\index{IsUmlVisitor@{IsUmlVisitor}!CIsUmlVisitor@{CIsUmlVisitor}}
+\subsubsection{\texorpdfstring{IsUmlVisitor()}{IsUmlVisitor()}}
+{\footnotesize\ttfamily bool C\+Is\+Uml\+Visitor\+::\+Is\+Uml\+Visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if visitor is uml visitor \begin{DoxyReturn}{Returns}
+bool m\+Is\+Uml 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_is_uml_visitor_ac49fb3a73f9949c21faf54d92d366b7c}\label{class_c_is_uml_visitor_ac49fb3a73f9949c21faf54d92d366b7c}} 
+\index{CIsUmlVisitor@{CIsUmlVisitor}!VisitUml@{VisitUml}}
+\index{VisitUml@{VisitUml}!CIsUmlVisitor@{CIsUmlVisitor}}
+\subsubsection{\texorpdfstring{VisitUml()}{VisitUml()}}
+{\footnotesize\ttfamily void C\+Is\+Uml\+Visitor\+::\+Visit\+Uml (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_uml_box}{C\+Uml\+Box}} $\ast$}]{uml }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Visit uml object
+
+Visits the U\+ML object 
+\begin{DoxyParams}{Parameters}
+{\em uml} & The U\+ML object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_visitor_abf6343050ae9c2f2526fa6a17ec891a2}{C\+Visitor}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{class_c_is_bad_uml_visitor_a749753fc1c57d534faf60a016a4fd745}{C\+Is\+Bad\+Uml\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_is_uml_visitor_8h}{Is\+Uml\+Visitor.\+h}}\item 
+\mbox{\hyperlink{_is_uml_visitor_8cpp}{Is\+Uml\+Visitor.\+cpp}}\end{DoxyCompactItemize}

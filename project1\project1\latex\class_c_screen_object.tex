@@ -1,0 +1,308 @@
+\hypertarget{class_c_screen_object}{}\section{C\+Screen\+Object Class Reference}
+\label{class_c_screen_object}\index{CScreenObject@{CScreenObject}}
+
+
+{\ttfamily \#include $<$Screen\+Object.\+h$>$}
+
+Inheritance diagram for C\+Screen\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.333333cm]{class_c_screen_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_screen_object_a80bd71b5ef2407d013fe81b4fd7806cb}\label{class_c_screen_object_a80bd71b5ef2407d013fe81b4fd7806cb}} 
+\mbox{\hyperlink{class_c_screen_object_a80bd71b5ef2407d013fe81b4fd7806cb}{C\+Screen\+Object}} ()=delete
+\begin{DoxyCompactList}\small\item\em default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_object_abbbd523822f8ea9e8d2db65efc0ccbda}\label{class_c_screen_object_abbbd523822f8ea9e8d2db65efc0ccbda}} 
+\mbox{\hyperlink{class_c_screen_object_abbbd523822f8ea9e8d2db65efc0ccbda}{C\+Screen\+Object}} (const \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} \&)=delete
+\begin{DoxyCompactList}\small\item\em copy constructor (disabled) \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{class_c_screen_object_a4d71a9079b9e3558fed4d65ccda628b4}{$\sim$\+C\+Screen\+Object}} ()
+\begin{DoxyCompactList}\small\item\em destructor \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_screen_object_ad9481ae325ca2374986c61fb6545fbe2}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em Tells the screen object to draw itself at (mX, mY) on the parameter graphics. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_c_screen_object_abec4a44a5e437c944188081ccdf41d50}{Get\+X\+Adjust}} ()
+\item 
+virtual bool \mbox{\hyperlink{class_c_screen_object_a92a3f69608fa214184c0c82a33569a07}{Hit\+Test}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Tests if the screen object has a pixel in the specified coordinate. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{class_c_screen_object_ac32f1b9ea19e703276b2a8880edd4022}{Get\+Width}} ()
+\item 
+virtual double \mbox{\hyperlink{class_c_screen_object_a5951174e223dbfe0fe9ed264905130a9}{Get\+Height}} ()
+\item 
+double \mbox{\hyperlink{class_c_screen_object_ae39daf9e1080c65e93bdecb87573b984}{GetX}} ()
+\item 
+double \mbox{\hyperlink{class_c_screen_object_a1c01dbcad26ade4d4989e9b9f61fd0c8}{GetY}} ()
+\item 
+double \mbox{\hyperlink{class_c_screen_object_ad7450c849f4b4f4f6d66c5acbcaa330c}{Get\+Angle}} ()
+\item 
+virtual void \mbox{\hyperlink{class_c_screen_object_abf7223b82f96a94c74952ddabf1fed5e}{Set\+Location}} (double x, double y)
+\item 
+virtual void \mbox{\hyperlink{class_c_screen_object_a3be2f2dc3917c25dc208217cb3acc72c}{Set\+Angle}} (double angle)
+\item 
+virtual void \mbox{\hyperlink{class_c_screen_object_ab682c1e08f001e666f0cec280e1e9eaa}{Update}} (double elapsed)
+\item 
+virtual void \mbox{\hyperlink{class_c_screen_object_a1420b59508fdab637367654438223832}{Accept}} (\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$visitor)
+\begin{DoxyCompactList}\small\item\em Allows us to tell if it is a shot pen (will only be called on pen objects) \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_screen_object_a584fe08e6bdd9efe0c2f06d6f1d53e70}{Pause\+Object}} (bool pause)
+\item 
+\mbox{\Hypertarget{class_c_screen_object_afeb43d504f1719a6cf5875cca6d8919c}\label{class_c_screen_object_afeb43d504f1719a6cf5875cca6d8919c}} 
+virtual void \mbox{\hyperlink{class_c_screen_object_afeb43d504f1719a6cf5875cca6d8919c}{Set\+Hit}} ()
+\begin{DoxyCompactList}\small\item\em Function to tell an object it was hit with the pen. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}} \mbox{\hyperlink{class_c_screen_object_a1a570970d440543b1cfebc1dac9c3efa}{Get\+Screen\+Layer}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{class_c_screen_object_afba7405527ca6eecad5f09c09e539df9}{Compare\+Layer}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$ obj1, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$ obj2)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_screen_object_a36d19374c1335693aa31cda5499b85da}{C\+Screen\+Object}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen, \mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}} layer)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Base Class for a Screen Object 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_screen_object_a4d71a9079b9e3558fed4d65ccda628b4}\label{class_c_screen_object_a4d71a9079b9e3558fed4d65ccda628b4}} 
+\index{CScreenObject@{CScreenObject}!````~CScreenObject@{$\sim$CScreenObject}}
+\index{````~CScreenObject@{$\sim$CScreenObject}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{$\sim$CScreenObject()}{~CScreenObject()}}
+{\footnotesize\ttfamily C\+Screen\+Object\+::$\sim$\+C\+Screen\+Object (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+destructor 
+
+Destructor \mbox{\Hypertarget{class_c_screen_object_a36d19374c1335693aa31cda5499b85da}\label{class_c_screen_object_a36d19374c1335693aa31cda5499b85da}} 
+\index{CScreenObject@{CScreenObject}!CScreenObject@{CScreenObject}}
+\index{CScreenObject@{CScreenObject}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{CScreenObject()}{CScreenObject()}}
+{\footnotesize\ttfamily C\+Screen\+Object\+::\+C\+Screen\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{screen,  }\item[{\mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}}}]{layer }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+Constructor for screen objects 
+\begin{DoxyParams}{Parameters}
+{\em layer} & the layer of the image\\
+\hline
+\end{DoxyParams}
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen this item is a member of \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_screen_object_a1420b59508fdab637367654438223832}\label{class_c_screen_object_a1420b59508fdab637367654438223832}} 
+\index{CScreenObject@{CScreenObject}!Accept@{Accept}}
+\index{Accept@{Accept}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily virtual void C\+Screen\+Object\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Allows us to tell if it is a shot pen (will only be called on pen objects) 
+
+Accept a visitor 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The visitor we accept \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_uml_box_a492e1d6063c938e7f099fe5640fc669b}{C\+Uml\+Box}}, \mbox{\hyperlink{class_c_pens_a054fe093d31223c2ad66ab328e158f33}{C\+Pens}}, \mbox{\hyperlink{class_c_player_a524a0fd1d55d4ac0a55d00d0492018f8}{C\+Player}}, and \mbox{\hyperlink{class_c_image_object_a7130a9fa130c2028aba6c28dcfc876d5}{C\+Image\+Object}}.
+
+\mbox{\Hypertarget{class_c_screen_object_afba7405527ca6eecad5f09c09e539df9}\label{class_c_screen_object_afba7405527ca6eecad5f09c09e539df9}} 
+\index{CScreenObject@{CScreenObject}!CompareLayer@{CompareLayer}}
+\index{CompareLayer@{CompareLayer}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{CompareLayer()}{CompareLayer()}}
+{\footnotesize\ttfamily static bool C\+Screen\+Object\+::\+Compare\+Layer (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$}]{obj1,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$}]{obj2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Compare two image layers to determine which is on top 
+\begin{DoxyParams}{Parameters}
+{\em obj1} & first item \\
+\hline
+{\em obj2} & second item \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+comparison 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_object_ad9481ae325ca2374986c61fb6545fbe2}\label{class_c_screen_object_ad9481ae325ca2374986c61fb6545fbe2}} 
+\index{CScreenObject@{CScreenObject}!Draw@{Draw}}
+\index{Draw@{Draw}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Screen\+Object\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Tells the screen object to draw itself at (mX, mY) on the parameter graphics. 
+
+Draw our player 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on, move it to an intermeditae class, pure virtual function \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_uml_inheritance_a57c02d5be17880c29a3573ead25ecc36}{C\+Uml\+Inheritance}}, \mbox{\hyperlink{class_c_uml_box_a9f4f8ae512bae9039279a62923435846}{C\+Uml\+Box}}, \mbox{\hyperlink{class_c_uml_pop_up_ab9dc4616dc8b7529a69d74a9db83b3a9}{C\+Uml\+Pop\+Up}}, \mbox{\hyperlink{class_c_scoreboard_a43f1b32f96b09b649b9052b97da81d4b}{C\+Scoreboard}}, \mbox{\hyperlink{class_c_image_object_a7f550785caf6f15a5a521ee69acc03c4}{C\+Image\+Object}}, and \mbox{\hyperlink{class_c_text_object_a467038e52d2e587083526cc42a76131f}{C\+Text\+Object}}.
+
+\mbox{\Hypertarget{class_c_screen_object_ad7450c849f4b4f4f6d66c5acbcaa330c}\label{class_c_screen_object_ad7450c849f4b4f4f6d66c5acbcaa330c}} 
+\index{CScreenObject@{CScreenObject}!GetAngle@{GetAngle}}
+\index{GetAngle@{GetAngle}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{GetAngle()}{GetAngle()}}
+{\footnotesize\ttfamily double C\+Screen\+Object\+::\+Get\+Angle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for the angle of the object \begin{DoxyReturn}{Returns}
+angle 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_object_a5951174e223dbfe0fe9ed264905130a9}\label{class_c_screen_object_a5951174e223dbfe0fe9ed264905130a9}} 
+\index{CScreenObject@{CScreenObject}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily virtual double C\+Screen\+Object\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Getter for the height of the screen object \begin{DoxyReturn}{Returns}
+height of this screen object 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_uml_box_a41f93630b86229a23274b14b7308b1f8}{C\+Uml\+Box}}.
+
+\mbox{\Hypertarget{class_c_screen_object_a1a570970d440543b1cfebc1dac9c3efa}\label{class_c_screen_object_a1a570970d440543b1cfebc1dac9c3efa}} 
+\index{CScreenObject@{CScreenObject}!GetScreenLayer@{GetScreenLayer}}
+\index{GetScreenLayer@{GetScreenLayer}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{GetScreenLayer()}{GetScreenLayer()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}} C\+Screen\+Object\+::\+Get\+Screen\+Layer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get layer to draw image on \begin{DoxyReturn}{Returns}
+the object layer number 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_object_ac32f1b9ea19e703276b2a8880edd4022}\label{class_c_screen_object_ac32f1b9ea19e703276b2a8880edd4022}} 
+\index{CScreenObject@{CScreenObject}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily virtual double C\+Screen\+Object\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Getter for the width of the screen object \begin{DoxyReturn}{Returns}
+width of this screen object 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_uml_box_a511859ee5042e1af916947bd22c5c18a}{C\+Uml\+Box}}.
+
+\mbox{\Hypertarget{class_c_screen_object_ae39daf9e1080c65e93bdecb87573b984}\label{class_c_screen_object_ae39daf9e1080c65e93bdecb87573b984}} 
+\index{CScreenObject@{CScreenObject}!GetX@{GetX}}
+\index{GetX@{GetX}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily double C\+Screen\+Object\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for the x position of the object \begin{DoxyReturn}{Returns}
+x, the x position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_object_abec4a44a5e437c944188081ccdf41d50}\label{class_c_screen_object_abec4a44a5e437c944188081ccdf41d50}} 
+\index{CScreenObject@{CScreenObject}!GetXAdjust@{GetXAdjust}}
+\index{GetXAdjust@{GetXAdjust}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{GetXAdjust()}{GetXAdjust()}}
+{\footnotesize\ttfamily virtual double C\+Screen\+Object\+::\+Get\+X\+Adjust (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Returns adjustment for X direction \begin{DoxyReturn}{Returns}
+m\+Adjust the adjustment for x direction 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_object_a1c01dbcad26ade4d4989e9b9f61fd0c8}\label{class_c_screen_object_a1c01dbcad26ade4d4989e9b9f61fd0c8}} 
+\index{CScreenObject@{CScreenObject}!GetY@{GetY}}
+\index{GetY@{GetY}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily double C\+Screen\+Object\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for the y position of the object \begin{DoxyReturn}{Returns}
+y, the y position 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_object_a92a3f69608fa214184c0c82a33569a07}\label{class_c_screen_object_a92a3f69608fa214184c0c82a33569a07}} 
+\index{CScreenObject@{CScreenObject}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Screen\+Object\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Tests if the screen object has a pixel in the specified coordinate. 
+
+Test to see if we hit this object at a point, most classes are unhittable and will simply return false. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X position to test \\
+\hline
+{\em y} & Y position to test \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if hit. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_uml_inheritance_a2ea7bb7da84ad2e16bdc7a1ba44985a1}{C\+Uml\+Inheritance}}, and \mbox{\hyperlink{class_c_image_object_a0b8db07f55fa820b3683d2a99d553120}{C\+Image\+Object}}.
+
+\mbox{\Hypertarget{class_c_screen_object_a584fe08e6bdd9efe0c2f06d6f1d53e70}\label{class_c_screen_object_a584fe08e6bdd9efe0c2f06d6f1d53e70}} 
+\index{CScreenObject@{CScreenObject}!PauseObject@{PauseObject}}
+\index{PauseObject@{PauseObject}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{PauseObject()}{PauseObject()}}
+{\footnotesize\ttfamily virtual void C\+Screen\+Object\+::\+Pause\+Object (\begin{DoxyParamCaption}\item[{bool}]{pause }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Base function for pausing 
+\begin{DoxyParams}{Parameters}
+{\em pause} & if screen paused \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_uml_box_a49ddda6a0bbd7b224b743f83b2f7cb0c}{C\+Uml\+Box}}, and \mbox{\hyperlink{class_c_pens_ac7f21709db467d9cb2c30f814d391edf}{C\+Pens}}.
+
+\mbox{\Hypertarget{class_c_screen_object_a3be2f2dc3917c25dc208217cb3acc72c}\label{class_c_screen_object_a3be2f2dc3917c25dc208217cb3acc72c}} 
+\index{CScreenObject@{CScreenObject}!SetAngle@{SetAngle}}
+\index{SetAngle@{SetAngle}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{SetAngle()}{SetAngle()}}
+{\footnotesize\ttfamily virtual void C\+Screen\+Object\+::\+Set\+Angle (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the angle of the image on screen 
+\begin{DoxyParams}{Parameters}
+{\em angle} & the angle to rotate to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_object_abf7223b82f96a94c74952ddabf1fed5e}\label{class_c_screen_object_abf7223b82f96a94c74952ddabf1fed5e}} 
+\index{CScreenObject@{CScreenObject}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{SetLocation()}{SetLocation()}}
+{\footnotesize\ttfamily virtual void C\+Screen\+Object\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Sets the location of this screen object to the parameter coordinates 
+\begin{DoxyParams}{Parameters}
+{\em x} & the x position to move to \\
+\hline
+{\em y} & the y position to move to \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_object_ab682c1e08f001e666f0cec280e1e9eaa}\label{class_c_screen_object_ab682c1e08f001e666f0cec280e1e9eaa}} 
+\index{CScreenObject@{CScreenObject}!Update@{Update}}
+\index{Update@{Update}!CScreenObject@{CScreenObject}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily virtual void C\+Screen\+Object\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Handle updates for animation 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & The time since the last update \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{class_c_uml_box_a75d4af7b7c119ff62babceb345d81427}{C\+Uml\+Box}}, \mbox{\hyperlink{class_c_player_a0a17b9e8c553dcf8a97b5ed6070ad560}{C\+Player}}, and \mbox{\hyperlink{class_c_pens_ae4a11a23cb7a91edc9b222f4b8a2f20f}{C\+Pens}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_screen_object_8h}{Screen\+Object.\+h}}\item 
+\mbox{\hyperlink{_screen_object_8cpp}{Screen\+Object.\+cpp}}\end{DoxyCompactItemize}

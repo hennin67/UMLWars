@@ -1,0 +1,61 @@
+\hypertarget{class_c_is_player_visitor}{}\section{C\+Is\+Player\+Visitor Class Reference}
+\label{class_c_is_player_visitor}\index{CIsPlayerVisitor@{CIsPlayerVisitor}}
+
+
+{\ttfamily \#include $<$Is\+Player\+Visitor.\+h$>$}
+
+Inheritance diagram for C\+Is\+Player\+Visitor\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_is_player_visitor}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_is_player_visitor_a2c53bdc67a585e9a43b07ff21ed874e9}\label{class_c_is_player_visitor_a2c53bdc67a585e9a43b07ff21ed874e9}} 
+\mbox{\hyperlink{class_c_is_player_visitor_a2c53bdc67a585e9a43b07ff21ed874e9}{C\+Is\+Player\+Visitor}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{class_c_is_player_visitor_ade10af41a195ead29f30ed6fffb4c3bd}{Visit\+Player}} (\mbox{\hyperlink{class_c_player}{C\+Player}} $\ast$player) override
+\item 
+bool \mbox{\hyperlink{class_c_is_player_visitor_ad5fa4aa38887229cca980a8c362e3ff8}{Is\+Player\+Visitor}} ()
+\item 
+\mbox{\Hypertarget{class_c_is_player_visitor_a7d0c122f99de41b5c03acf476afb5ed6}\label{class_c_is_player_visitor_a7d0c122f99de41b5c03acf476afb5ed6}} 
+void \mbox{\hyperlink{class_c_is_player_visitor_a7d0c122f99de41b5c03acf476afb5ed6}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Resets member data. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that visits Player object 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_is_player_visitor_ad5fa4aa38887229cca980a8c362e3ff8}\label{class_c_is_player_visitor_ad5fa4aa38887229cca980a8c362e3ff8}} 
+\index{CIsPlayerVisitor@{CIsPlayerVisitor}!IsPlayerVisitor@{IsPlayerVisitor}}
+\index{IsPlayerVisitor@{IsPlayerVisitor}!CIsPlayerVisitor@{CIsPlayerVisitor}}
+\subsubsection{\texorpdfstring{IsPlayerVisitor()}{IsPlayerVisitor()}}
+{\footnotesize\ttfamily bool C\+Is\+Player\+Visitor\+::\+Is\+Player\+Visitor (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Checks if visitor is player visitor \begin{DoxyReturn}{Returns}
+bool m\+Is\+Player 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_is_player_visitor_ade10af41a195ead29f30ed6fffb4c3bd}\label{class_c_is_player_visitor_ade10af41a195ead29f30ed6fffb4c3bd}} 
+\index{CIsPlayerVisitor@{CIsPlayerVisitor}!VisitPlayer@{VisitPlayer}}
+\index{VisitPlayer@{VisitPlayer}!CIsPlayerVisitor@{CIsPlayerVisitor}}
+\subsubsection{\texorpdfstring{VisitPlayer()}{VisitPlayer()}}
+{\footnotesize\ttfamily void C\+Is\+Player\+Visitor\+::\+Visit\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_player}{C\+Player}} $\ast$}]{player }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Visit Player object 
+\begin{DoxyParams}{Parameters}
+{\em player} & the player we\textquotesingle{}re looking at \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_visitor_af177b31b3af36c3eeb8eb70fef63a75c}{C\+Visitor}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_is_player_visitor_8h}{Is\+Player\+Visitor.\+h}}\item 
+\mbox{\hyperlink{_is_player_visitor_8cpp}{Is\+Player\+Visitor.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,114 @@
+\hypertarget{class_c_uml_inheritance}{}\section{C\+Uml\+Inheritance Class Reference}
+\label{class_c_uml_inheritance}\index{CUmlInheritance@{CUmlInheritance}}
+
+
+Class for inheritance cases of Uml.  
+
+
+
+
+{\ttfamily \#include $<$Uml\+Inheritance.\+h$>$}
+
+Inheritance diagram for C\+Uml\+Inheritance\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_uml_inheritance}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_uml_inheritance_a5976881e8fc137ac1b8ffa9d136f27d1}{C\+Uml\+Inheritance}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$play)
+\item 
+void \mbox{\hyperlink{class_c_uml_inheritance_a29a6e31bd95eb972aa8a0cb2cfe4012c}{Set\+Base}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_uml_box}{C\+Uml\+Box}} $>$ base)
+\begin{DoxyCompactList}\small\item\em Sets the uml is bad and the reason why it is. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_uml_inheritance_a9e8edc6babd8213fd8f606ef34123814}\label{class_c_uml_inheritance_a9e8edc6babd8213fd8f606ef34123814}} 
+void \mbox{\hyperlink{class_c_uml_inheritance_a9e8edc6babd8213fd8f606ef34123814}{Set\+Derived}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_uml_box}{C\+Uml\+Box}} $>$ derived)
+\begin{DoxyCompactList}\small\item\em set the derivative \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_uml_inheritance_a5a07f01e7ee0bec7d53485ca7b0ebe99}\label{class_c_uml_inheritance_a5a07f01e7ee0bec7d53485ca7b0ebe99}} 
+void \mbox{\hyperlink{class_c_uml_inheritance_a5a07f01e7ee0bec7d53485ca7b0ebe99}{Set\+Direction}} (bool direct)
+\begin{DoxyCompactList}\small\item\em set the direction \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_uml_inheritance_a57c02d5be17880c29a3573ead25ecc36}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em draw inheritance \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{class_c_uml_inheritance_a2ea7bb7da84ad2e16bdc7a1ba44985a1}{Hit\+Test}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em hit test for inheritance \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for inheritance cases of Uml. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_uml_inheritance_a5976881e8fc137ac1b8ffa9d136f27d1}\label{class_c_uml_inheritance_a5976881e8fc137ac1b8ffa9d136f27d1}} 
+\index{CUmlInheritance@{CUmlInheritance}!CUmlInheritance@{CUmlInheritance}}
+\index{CUmlInheritance@{CUmlInheritance}!CUmlInheritance@{CUmlInheritance}}
+\subsubsection{\texorpdfstring{CUmlInheritance()}{CUmlInheritance()}}
+{\footnotesize\ttfamily C\+Uml\+Inheritance\+::\+C\+Uml\+Inheritance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{play }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em play} & pointer to screen \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_uml_inheritance_a57c02d5be17880c29a3573ead25ecc36}\label{class_c_uml_inheritance_a57c02d5be17880c29a3573ead25ecc36}} 
+\index{CUmlInheritance@{CUmlInheritance}!Draw@{Draw}}
+\index{Draw@{Draw}!CUmlInheritance@{CUmlInheritance}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Uml\+Inheritance\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+draw inheritance 
+
+Draw function that draws U\+ML boxes on our screen 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_uml_box_a9f4f8ae512bae9039279a62923435846}{C\+Uml\+Box}}.
+
+\mbox{\Hypertarget{class_c_uml_inheritance_a2ea7bb7da84ad2e16bdc7a1ba44985a1}\label{class_c_uml_inheritance_a2ea7bb7da84ad2e16bdc7a1ba44985a1}} 
+\index{CUmlInheritance@{CUmlInheritance}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CUmlInheritance@{CUmlInheritance}}
+\subsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Uml\+Inheritance\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+hit test for inheritance 
+
+Test interitence hit test 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+bool of hit 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_a92a3f69608fa214184c0c82a33569a07}{C\+Screen\+Object}}.
+
+\mbox{\Hypertarget{class_c_uml_inheritance_a29a6e31bd95eb972aa8a0cb2cfe4012c}\label{class_c_uml_inheritance_a29a6e31bd95eb972aa8a0cb2cfe4012c}} 
+\index{CUmlInheritance@{CUmlInheritance}!SetBase@{SetBase}}
+\index{SetBase@{SetBase}!CUmlInheritance@{CUmlInheritance}}
+\subsubsection{\texorpdfstring{SetBase()}{SetBase()}}
+{\footnotesize\ttfamily void C\+Uml\+Inheritance\+::\+Set\+Base (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_uml_box}{C\+Uml\+Box}} $>$}]{base }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the uml is bad and the reason why it is. 
+
+set the base 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Uml\+Inheritance.\+h\item 
+Uml\+Inheritance.\+cpp\end{DoxyCompactItemize}

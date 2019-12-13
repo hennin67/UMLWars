@@ -1,0 +1,143 @@
+\hypertarget{class_c_scoreboard}{}\section{C\+Scoreboard Class Reference}
+\label{class_c_scoreboard}\index{CScoreboard@{CScoreboard}}
+
+
+Class to track and display the score.  
+
+
+
+
+{\ttfamily \#include $<$Scoreboard.\+h$>$}
+
+Inheritance diagram for C\+Scoreboard\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_scoreboard}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_scoreboard_a1e65cc402934fea467540cce987cc9a1}\label{class_c_scoreboard_a1e65cc402934fea467540cce987cc9a1}} 
+\mbox{\hyperlink{class_c_scoreboard_a1e65cc402934fea467540cce987cc9a1}{C\+Scoreboard}} ()=delete
+\begin{DoxyCompactList}\small\item\em default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_scoreboard_a2de2543790f6133fb67e5d23fbd93d9d}\label{class_c_scoreboard_a2de2543790f6133fb67e5d23fbd93d9d}} 
+\mbox{\hyperlink{class_c_scoreboard_a2de2543790f6133fb67e5d23fbd93d9d}{C\+Scoreboard}} (const \mbox{\hyperlink{class_c_scoreboard}{C\+Scoreboard}} \&)=delete
+\begin{DoxyCompactList}\small\item\em copy constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_scoreboard_ad3a0f3c1030fdd94c50ce7b61a412296}{C\+Scoreboard}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen)
+\item 
+\mbox{\Hypertarget{class_c_scoreboard_a43f1b32f96b09b649b9052b97da81d4b}\label{class_c_scoreboard_a43f1b32f96b09b649b9052b97da81d4b}} 
+void \mbox{\hyperlink{class_c_scoreboard_a43f1b32f96b09b649b9052b97da81d4b}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\begin{DoxyCompactList}\small\item\em draws the scoreboard to the graphics passed as a parameter \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_scoreboard_ab171509b39d2604fe9ba65a4a8205fc1}{Add\+Correct}} (int amount=1)
+\item 
+void \mbox{\hyperlink{class_c_scoreboard_a931d264ccc846f1c91db0ef875ba0389}{Add\+Incorrect}} (int amount=1)
+\item 
+void \mbox{\hyperlink{class_c_scoreboard_a22c18eda1cb527d4fc2102486132f0b1}{Add\+Missed}} (int amount=1)
+\item 
+int \mbox{\hyperlink{class_c_scoreboard_a7c961d101942e7d7b42294105457d828}{Get\+Correct}} ()
+\item 
+int \mbox{\hyperlink{class_c_scoreboard_a230139e41c56f0aacf3a82b41034db27}{Get\+Incorrect}} ()
+\item 
+int \mbox{\hyperlink{class_c_scoreboard_a99d95c0502e4ca08a2cf867568998065}{Get\+Missed}} ()
+\item 
+void \mbox{\hyperlink{class_c_scoreboard_a86ec1f448410e12d88939ebaa5292a29}{Rotate\+Image}} (C\+Point point)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to track and display the score. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_scoreboard_ad3a0f3c1030fdd94c50ce7b61a412296}\label{class_c_scoreboard_ad3a0f3c1030fdd94c50ce7b61a412296}} 
+\index{CScoreboard@{CScoreboard}!CScoreboard@{CScoreboard}}
+\index{CScoreboard@{CScoreboard}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{CScoreboard()}{CScoreboard()}}
+{\footnotesize\ttfamily C\+Scoreboard\+::\+C\+Scoreboard (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{screen }\end{DoxyParamCaption})}
+
+constructor 
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen we are playing on \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_scoreboard_ab171509b39d2604fe9ba65a4a8205fc1}\label{class_c_scoreboard_ab171509b39d2604fe9ba65a4a8205fc1}} 
+\index{CScoreboard@{CScoreboard}!AddCorrect@{AddCorrect}}
+\index{AddCorrect@{AddCorrect}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{AddCorrect()}{AddCorrect()}}
+{\footnotesize\ttfamily void C\+Scoreboard\+::\+Add\+Correct (\begin{DoxyParamCaption}\item[{int}]{amount = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+adds to the amount correct displayed by the scoreboard 
+\begin{DoxyParams}{Parameters}
+{\em amount} & amount that the score increments by, defaults to 1 for now. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_scoreboard_a931d264ccc846f1c91db0ef875ba0389}\label{class_c_scoreboard_a931d264ccc846f1c91db0ef875ba0389}} 
+\index{CScoreboard@{CScoreboard}!AddIncorrect@{AddIncorrect}}
+\index{AddIncorrect@{AddIncorrect}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{AddIncorrect()}{AddIncorrect()}}
+{\footnotesize\ttfamily void C\+Scoreboard\+::\+Add\+Incorrect (\begin{DoxyParamCaption}\item[{int}]{amount = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+adds to the amount incorrect displayed by the scoreboard 
+\begin{DoxyParams}{Parameters}
+{\em amount} & amount that the value increments by, defaults to 1 for now. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_scoreboard_a22c18eda1cb527d4fc2102486132f0b1}\label{class_c_scoreboard_a22c18eda1cb527d4fc2102486132f0b1}} 
+\index{CScoreboard@{CScoreboard}!AddMissed@{AddMissed}}
+\index{AddMissed@{AddMissed}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{AddMissed()}{AddMissed()}}
+{\footnotesize\ttfamily void C\+Scoreboard\+::\+Add\+Missed (\begin{DoxyParamCaption}\item[{int}]{amount = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+adds to the amount missed displayed by the scoreboard 
+\begin{DoxyParams}{Parameters}
+{\em amount} & amount that the value increments by, defaults to 1 for now. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_scoreboard_a7c961d101942e7d7b42294105457d828}\label{class_c_scoreboard_a7c961d101942e7d7b42294105457d828}} 
+\index{CScoreboard@{CScoreboard}!GetCorrect@{GetCorrect}}
+\index{GetCorrect@{GetCorrect}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{GetCorrect()}{GetCorrect()}}
+{\footnotesize\ttfamily int C\+Scoreboard\+::\+Get\+Correct (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+gets number of correct items hit for testing \begin{DoxyReturn}{Returns}
+num correct 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scoreboard_a230139e41c56f0aacf3a82b41034db27}\label{class_c_scoreboard_a230139e41c56f0aacf3a82b41034db27}} 
+\index{CScoreboard@{CScoreboard}!GetIncorrect@{GetIncorrect}}
+\index{GetIncorrect@{GetIncorrect}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{GetIncorrect()}{GetIncorrect()}}
+{\footnotesize\ttfamily int C\+Scoreboard\+::\+Get\+Incorrect (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+gets number of incorrect items hit for testing \begin{DoxyReturn}{Returns}
+num incorrect 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scoreboard_a99d95c0502e4ca08a2cf867568998065}\label{class_c_scoreboard_a99d95c0502e4ca08a2cf867568998065}} 
+\index{CScoreboard@{CScoreboard}!GetMissed@{GetMissed}}
+\index{GetMissed@{GetMissed}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{GetMissed()}{GetMissed()}}
+{\footnotesize\ttfamily int C\+Scoreboard\+::\+Get\+Missed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+gets number of missed items hit for testing \begin{DoxyReturn}{Returns}
+num missed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_scoreboard_a86ec1f448410e12d88939ebaa5292a29}\label{class_c_scoreboard_a86ec1f448410e12d88939ebaa5292a29}} 
+\index{CScoreboard@{CScoreboard}!RotateImage@{RotateImage}}
+\index{RotateImage@{RotateImage}!CScoreboard@{CScoreboard}}
+\subsubsection{\texorpdfstring{RotateImage()}{RotateImage()}}
+{\footnotesize\ttfamily void C\+Scoreboard\+::\+Rotate\+Image (\begin{DoxyParamCaption}\item[{C\+Point}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Rotate function for pause 
+\begin{DoxyParams}{Parameters}
+{\em point} & Vector of mouse location \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_scoreboard_8h}{Scoreboard.\+h}}\item 
+\mbox{\hyperlink{_scoreboard_8cpp}{Scoreboard.\+cpp}}\end{DoxyCompactItemize}

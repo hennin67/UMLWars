@@ -1,0 +1,148 @@
+\hypertarget{class_c_uml}{}\section{C\+Uml Class Reference}
+\label{class_c_uml}\index{CUml@{CUml}}
+
+
+{\ttfamily \#include $<$Uml.\+h$>$}
+
+Inheritance diagram for C\+Uml\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_uml}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{class_c_uml_ae973a18d9ff708dd9dfd26ba5d44061f}{$\sim$\+C\+Uml}} ()
+\item 
+\mbox{\Hypertarget{class_c_uml_acecb04fe601ee46828985bb59176e9d8}\label{class_c_uml_acecb04fe601ee46828985bb59176e9d8}} 
+{\bfseries C\+Uml} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen)
+\item 
+\mbox{\Hypertarget{class_c_uml_a278c4fa2802c1c2dfde8498ffb4a0cd5}\label{class_c_uml_a278c4fa2802c1c2dfde8498ffb4a0cd5}} 
+{\bfseries C\+Uml} (\mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $\ast$screen)
+\item 
+\mbox{\Hypertarget{class_c_uml_a4a9def91d5298fb1b3f524f5608d81c2}\label{class_c_uml_a4a9def91d5298fb1b3f524f5608d81c2}} 
+{\bfseries C\+Uml} (const \mbox{\hyperlink{class_c_uml}{C\+Uml}} \&)=delete
+\item 
+virtual bool \mbox{\hyperlink{class_c_uml_a5f0281b47a5bb0ec6c4e6b9c83a7efd4}{Hit\+Test}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Draw the U\+ML Objects. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_uml_ac976ed21769ae13c888932a6e6239dd0}{Move\+Uml}} (double x, double y)
+\item 
+void \mbox{\hyperlink{class_c_uml_a5f8796cf4196fca70718e7bb7e21dfbf}{Update}} (double elapsed)
+\item 
+virtual void \mbox{\hyperlink{class_c_uml_a6c376484d055c37fdcc887eda97a61a3}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\begin{DoxyCompactList}\small\item\em Tells the screen object to draw itself at (mX, mY) on the parameter graphics. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_uml_a435e42d85ab9cbe113931f4399d232dc}{Set\+Location}} (double x, double y)
+\item 
+\mbox{\Hypertarget{class_c_uml_a08d1a1072dc648b855c349c26dbf978a}\label{class_c_uml_a08d1a1072dc648b855c349c26dbf978a}} 
+void {\bfseries Draw\+Uml} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that describes a uml object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_uml_ae973a18d9ff708dd9dfd26ba5d44061f}\label{class_c_uml_ae973a18d9ff708dd9dfd26ba5d44061f}} 
+\index{CUml@{CUml}!````~CUml@{$\sim$CUml}}
+\index{````~CUml@{$\sim$CUml}!CUml@{CUml}}
+\subsubsection{\texorpdfstring{$\sim$CUml()}{~CUml()}}
+{\footnotesize\ttfamily C\+Uml\+::$\sim$\+C\+Uml (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Destructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_uml_a6c376484d055c37fdcc887eda97a61a3}\label{class_c_uml_a6c376484d055c37fdcc887eda97a61a3}} 
+\index{CUml@{CUml}!Draw@{Draw}}
+\index{Draw@{Draw}!CUml@{CUml}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Uml\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Tells the screen object to draw itself at (mX, mY) on the parameter graphics. 
+
+Draw our player 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The graphics context to draw on, move it to an intermeditae class, pure virtual function \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_ad9481ae325ca2374986c61fb6545fbe2}{C\+Screen\+Object}}.
+
+\mbox{\Hypertarget{class_c_uml_a5f0281b47a5bb0ec6c4e6b9c83a7efd4}\label{class_c_uml_a5f0281b47a5bb0ec6c4e6b9c83a7efd4}} 
+\index{CUml@{CUml}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CUml@{CUml}}
+\subsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Uml\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Draw the U\+ML Objects. 
+
+Test to see if the U\+ML object has been hit on 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location on the aquarium to test \\
+\hline
+{\em y} & Y location on the aquarium to test \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_a92a3f69608fa214184c0c82a33569a07}{C\+Screen\+Object}}.
+
+\mbox{\Hypertarget{class_c_uml_ac976ed21769ae13c888932a6e6239dd0}\label{class_c_uml_ac976ed21769ae13c888932a6e6239dd0}} 
+\index{CUml@{CUml}!MoveUml@{MoveUml}}
+\index{MoveUml@{MoveUml}!CUml@{CUml}}
+\subsubsection{\texorpdfstring{MoveUml()}{MoveUml()}}
+{\footnotesize\ttfamily void C\+Uml\+::\+Move\+Uml (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})}
+
+Move the uml 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_uml_a435e42d85ab9cbe113931f4399d232dc}\label{class_c_uml_a435e42d85ab9cbe113931f4399d232dc}} 
+\index{CUml@{CUml}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!CUml@{CUml}}
+\subsubsection{\texorpdfstring{SetLocation()}{SetLocation()}}
+{\footnotesize\ttfamily void C\+Uml\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{double}]{x,  }\item[{double}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Set the item location 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_abf7223b82f96a94c74952ddabf1fed5e}{C\+Screen\+Object}}.
+
+\mbox{\Hypertarget{class_c_uml_a5f8796cf4196fca70718e7bb7e21dfbf}\label{class_c_uml_a5f8796cf4196fca70718e7bb7e21dfbf}} 
+\index{CUml@{CUml}!Update@{Update}}
+\index{Update@{Update}!CUml@{CUml}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Uml\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Handle updates in time of our fish
+
+This is called before we draw and allows us to move our fish. We add our speed times the amount of time that has elapsed. 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & Time elapsed since the class call \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_ab682c1e08f001e666f0cec280e1e9eaa}{C\+Screen\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_uml_8h}{Uml.\+h}}\item 
+\mbox{\hyperlink{_uml_8cpp}{Uml.\+cpp}}\end{DoxyCompactItemize}

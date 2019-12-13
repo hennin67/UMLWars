@@ -1,0 +1,98 @@
+\hypertarget{class_c_uml_pop_up}{}\section{C\+Uml\+Pop\+Up Class Reference}
+\label{class_c_uml_pop_up}\index{CUmlPopUp@{CUmlPopUp}}
+
+
+Class to track and display the score.  
+
+
+
+
+{\ttfamily \#include $<$Uml\+Pop\+Up.\+h$>$}
+
+Inheritance diagram for C\+Uml\+Pop\+Up\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_uml_pop_up}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_uml_pop_up_aebfa4131b157471dd72bd8cf33c79f39}\label{class_c_uml_pop_up_aebfa4131b157471dd72bd8cf33c79f39}} 
+\mbox{\hyperlink{class_c_uml_pop_up_aebfa4131b157471dd72bd8cf33c79f39}{C\+Uml\+Pop\+Up}} ()=delete
+\begin{DoxyCompactList}\small\item\em default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_uml_pop_up_aff6813da1336a5f829f357282008ed98}\label{class_c_uml_pop_up_aff6813da1336a5f829f357282008ed98}} 
+\mbox{\hyperlink{class_c_uml_pop_up_aff6813da1336a5f829f357282008ed98}{C\+Uml\+Pop\+Up}} (const \mbox{\hyperlink{class_c_uml_pop_up}{C\+Uml\+Pop\+Up}} \&)=delete
+\begin{DoxyCompactList}\small\item\em copy constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_c_uml_pop_up_a7bebcefec4897b52e2dda3095bb807b5}{C\+Uml\+Pop\+Up}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen)
+\item 
+void \mbox{\hyperlink{class_c_uml_pop_up_ab9dc4616dc8b7529a69d74a9db83b3a9}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics) override
+\item 
+void \mbox{\hyperlink{class_c_uml_pop_up_a71d5c02b32a372120c438a2e607b1bae}{Rotate\+Image}} (C\+Point point)
+\item 
+void \mbox{\hyperlink{class_c_uml_pop_up_a787be205186fbccdb9c2e8c1921ab071}{Set\+Bad}} (std\+::wstring att)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class to track and display the score. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_uml_pop_up_a7bebcefec4897b52e2dda3095bb807b5}\label{class_c_uml_pop_up_a7bebcefec4897b52e2dda3095bb807b5}} 
+\index{CUmlPopUp@{CUmlPopUp}!CUmlPopUp@{CUmlPopUp}}
+\index{CUmlPopUp@{CUmlPopUp}!CUmlPopUp@{CUmlPopUp}}
+\subsubsection{\texorpdfstring{CUmlPopUp()}{CUmlPopUp()}}
+{\footnotesize\ttfamily C\+Uml\+Pop\+Up\+::\+C\+Uml\+Pop\+Up (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen we are playing on \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_uml_pop_up_ab9dc4616dc8b7529a69d74a9db83b3a9}\label{class_c_uml_pop_up_ab9dc4616dc8b7529a69d74a9db83b3a9}} 
+\index{CUmlPopUp@{CUmlPopUp}!Draw@{Draw}}
+\index{Draw@{Draw}!CUmlPopUp@{CUmlPopUp}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Uml\+Pop\+Up\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+draws the scoreboard to the graphics passed as a parameter 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ graphics \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_text_object_a467038e52d2e587083526cc42a76131f}{C\+Text\+Object}}.
+
+\mbox{\Hypertarget{class_c_uml_pop_up_a71d5c02b32a372120c438a2e607b1bae}\label{class_c_uml_pop_up_a71d5c02b32a372120c438a2e607b1bae}} 
+\index{CUmlPopUp@{CUmlPopUp}!RotateImage@{RotateImage}}
+\index{RotateImage@{RotateImage}!CUmlPopUp@{CUmlPopUp}}
+\subsubsection{\texorpdfstring{RotateImage()}{RotateImage()}}
+{\footnotesize\ttfamily void C\+Uml\+Pop\+Up\+::\+Rotate\+Image (\begin{DoxyParamCaption}\item[{C\+Point}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Rotate function for pause 
+\begin{DoxyParams}{Parameters}
+{\em point} & Vector of mouse location \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_uml_pop_up_a787be205186fbccdb9c2e8c1921ab071}\label{class_c_uml_pop_up_a787be205186fbccdb9c2e8c1921ab071}} 
+\index{CUmlPopUp@{CUmlPopUp}!SetBad@{SetBad}}
+\index{SetBad@{SetBad}!CUmlPopUp@{CUmlPopUp}}
+\subsubsection{\texorpdfstring{SetBad()}{SetBad()}}
+{\footnotesize\ttfamily void C\+Uml\+Pop\+Up\+::\+Set\+Bad (\begin{DoxyParamCaption}\item[{std\+::wstring}]{att }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Set the bad attribute 
+\begin{DoxyParams}{Parameters}
+{\em att} & bad uml attribute \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_uml_pop_up_8h}{Uml\+Pop\+Up.\+h}}\item 
+\mbox{\hyperlink{_uml_pop_up_8cpp}{Uml\+Pop\+Up.\+cpp}}\end{DoxyCompactItemize}

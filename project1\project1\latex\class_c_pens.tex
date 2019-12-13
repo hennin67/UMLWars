@@ -1,0 +1,177 @@
+\hypertarget{class_c_pens}{}\section{C\+Pens Class Reference}
+\label{class_c_pens}\index{CPens@{CPens}}
+
+
+{\ttfamily \#include $<$Pens.\+h$>$}
+
+Inheritance diagram for C\+Pens\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_pens}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_pens_af7d7b1e969d038c385998bca870cb854}{C\+Pens}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_pens_ade69966f5065e19f4e0704309c7cf9d1}\label{class_c_pens_ade69966f5065e19f4e0704309c7cf9d1}} 
+\mbox{\hyperlink{class_c_pens_ade69966f5065e19f4e0704309c7cf9d1}{C\+Pens}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_pens_aa87dce9713b4a71cc3977658ff0dc88d}\label{class_c_pens_aa87dce9713b4a71cc3977658ff0dc88d}} 
+\mbox{\hyperlink{class_c_pens_aa87dce9713b4a71cc3977658ff0dc88d}{C\+Pens}} (const \mbox{\hyperlink{class_c_pens}{C\+Pens}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_pens_ae4a11a23cb7a91edc9b222f4b8a2f20f}{Update}} (double elapsed) override
+\begin{DoxyCompactList}\small\item\em Update Pen on left mouse click. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_pens_a617b365e7e00743aff41f355331ff738}\label{class_c_pens_a617b365e7e00743aff41f355331ff738}} 
+void \mbox{\hyperlink{class_c_pens_a617b365e7e00743aff41f355331ff738}{Set\+Shot}} ()
+\begin{DoxyCompactList}\small\item\em Set Shot for pen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_pens_af87130ba45662455044dcc15547e9a57}{Get\+Shot}} ()
+\item 
+double \mbox{\hyperlink{class_c_pens_a94df476295def576bc8274d2f0b25e87}{Get\+Speed}} ()
+\item 
+void \mbox{\hyperlink{class_c_pens_a5864267ee35a4787de85bc721732f819}{Set\+Speed}} (double new\+Speed)
+\item 
+void \mbox{\hyperlink{class_c_pens_a1f2dbffbe8ff484a1c4c2bccf87fddda}{Set\+Shoot\+Angle}} (double angle)
+\item 
+virtual void \mbox{\hyperlink{class_c_pens_a054fe093d31223c2ad66ab328e158f33}{Accept}} (\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$visitor) override
+\item 
+void \mbox{\hyperlink{class_c_pens_ad028040c46be13e70983b497751c4741}{Set\+Paused}} (bool paused)
+\item 
+virtual void \mbox{\hyperlink{class_c_pens_ac7f21709db467d9cb2c30f814d391edf}{Pause\+Object}} (bool paused) override
+\begin{DoxyCompactList}\small\item\em Pauses the pen object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class that describes a pen object. 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_pens_af7d7b1e969d038c385998bca870cb854}\label{class_c_pens_af7d7b1e969d038c385998bca870cb854}} 
+\index{CPens@{CPens}!CPens@{CPens}}
+\index{CPens@{CPens}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{CPens()}{CPens()}}
+{\footnotesize\ttfamily C\+Pens\+::\+C\+Pens (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em screen} & The screen this is a member of \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_pens_a054fe093d31223c2ad66ab328e158f33}\label{class_c_pens_a054fe093d31223c2ad66ab328e158f33}} 
+\index{CPens@{CPens}!Accept@{Accept}}
+\index{Accept@{Accept}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily virtual void C\+Pens\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+Accept a visitor 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The visitor it is accepting \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_image_object_a7130a9fa130c2028aba6c28dcfc876d5}{C\+Image\+Object}}.
+
+\mbox{\Hypertarget{class_c_pens_af87130ba45662455044dcc15547e9a57}\label{class_c_pens_af87130ba45662455044dcc15547e9a57}} 
+\index{CPens@{CPens}!GetShot@{GetShot}}
+\index{GetShot@{GetShot}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{GetShot()}{GetShot()}}
+{\footnotesize\ttfamily bool C\+Pens\+::\+Get\+Shot (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get Shot for pen \begin{DoxyReturn}{Returns}
+bool Whether or not the pen has been shot 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_pens_a94df476295def576bc8274d2f0b25e87}\label{class_c_pens_a94df476295def576bc8274d2f0b25e87}} 
+\index{CPens@{CPens}!GetSpeed@{GetSpeed}}
+\index{GetSpeed@{GetSpeed}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{GetSpeed()}{GetSpeed()}}
+{\footnotesize\ttfamily double C\+Pens\+::\+Get\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for pen speed \begin{DoxyReturn}{Returns}
+int The pen\textquotesingle{}s speed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_pens_ac7f21709db467d9cb2c30f814d391edf}\label{class_c_pens_ac7f21709db467d9cb2c30f814d391edf}} 
+\index{CPens@{CPens}!PauseObject@{PauseObject}}
+\index{PauseObject@{PauseObject}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{PauseObject()}{PauseObject()}}
+{\footnotesize\ttfamily void C\+Pens\+::\+Pause\+Object (\begin{DoxyParamCaption}\item[{bool}]{paused }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Pauses the pen object. 
+
+Freeze pen on pause 
+\begin{DoxyParams}{Parameters}
+{\em paused} & if screen paused \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_a584fe08e6bdd9efe0c2f06d6f1d53e70}{C\+Screen\+Object}}.
+
+\mbox{\Hypertarget{class_c_pens_ad028040c46be13e70983b497751c4741}\label{class_c_pens_ad028040c46be13e70983b497751c4741}} 
+\index{CPens@{CPens}!SetPaused@{SetPaused}}
+\index{SetPaused@{SetPaused}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{SetPaused()}{SetPaused()}}
+{\footnotesize\ttfamily void C\+Pens\+::\+Set\+Paused (\begin{DoxyParamCaption}\item[{bool}]{paused }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Sets pause state of the game 
+\begin{DoxyParams}{Parameters}
+{\em paused} & Pause state of the game \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_pens_a1f2dbffbe8ff484a1c4c2bccf87fddda}\label{class_c_pens_a1f2dbffbe8ff484a1c4c2bccf87fddda}} 
+\index{CPens@{CPens}!SetShootAngle@{SetShootAngle}}
+\index{SetShootAngle@{SetShootAngle}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{SetShootAngle()}{SetShootAngle()}}
+{\footnotesize\ttfamily void C\+Pens\+::\+Set\+Shoot\+Angle (\begin{DoxyParamCaption}\item[{double}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setter for pen shoot angle 
+\begin{DoxyParams}{Parameters}
+{\em angle} & The angle we are shooting \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_pens_a5864267ee35a4787de85bc721732f819}\label{class_c_pens_a5864267ee35a4787de85bc721732f819}} 
+\index{CPens@{CPens}!SetSpeed@{SetSpeed}}
+\index{SetSpeed@{SetSpeed}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{SetSpeed()}{SetSpeed()}}
+{\footnotesize\ttfamily void C\+Pens\+::\+Set\+Speed (\begin{DoxyParamCaption}\item[{double}]{new\+Speed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Setter for pen speed 
+\begin{DoxyParams}{Parameters}
+{\em new\+Speed} & the new speed we want the pen to have \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_pens_ae4a11a23cb7a91edc9b222f4b8a2f20f}\label{class_c_pens_ae4a11a23cb7a91edc9b222f4b8a2f20f}} 
+\index{CPens@{CPens}!Update@{Update}}
+\index{Update@{Update}!CPens@{CPens}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Pens\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update Pen on left mouse click. 
+
+Update our pen location 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & time elapsed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_ab682c1e08f001e666f0cec280e1e9eaa}{C\+Screen\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_pens_8h}{Pens.\+h}}\item 
+\mbox{\hyperlink{_pens_8cpp}{Pens.\+cpp}}\end{DoxyCompactItemize}

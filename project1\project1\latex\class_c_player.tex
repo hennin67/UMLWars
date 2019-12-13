@@ -1,0 +1,172 @@
+\hypertarget{class_c_player}{}\section{C\+Player Class Reference}
+\label{class_c_player}\index{CPlayer@{CPlayer}}
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+Inheritance diagram for C\+Player\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=3.000000cm]{class_c_player}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_player_ad48a32c4432da29ef46b3ff6981c122f}{C\+Player}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_player_afe4da7254b270820ecd9fbc91e9d8b50}\label{class_c_player_afe4da7254b270820ecd9fbc91e9d8b50}} 
+\mbox{\hyperlink{class_c_player_afe4da7254b270820ecd9fbc91e9d8b50}{C\+Player}} ()=delete
+\begin{DoxyCompactList}\small\item\em Default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_player_a8352acf66ff8778a1af3f76b4fafd2f5}\label{class_c_player_a8352acf66ff8778a1af3f76b4fafd2f5}} 
+\mbox{\hyperlink{class_c_player_a8352acf66ff8778a1af3f76b4fafd2f5}{C\+Player}} (const \mbox{\hyperlink{class_c_player}{C\+Player}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Copy constructor (disabled) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_player_a5e44aa329b892f90bf8eb7aa38155d50}{Rotate\+Image}} (C\+Point point)
+\begin{DoxyCompactList}\small\item\em Rotate Harold and Pen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_player_a6cd750cb5f29c4d8615c936ab537a8c2}{Shoot\+Pen}} ()
+\begin{DoxyCompactList}\small\item\em Shoot pen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_player_a0a17b9e8c553dcf8a97b5ed6070ad560}{Update}} (double elapsed) override
+\begin{DoxyCompactList}\small\item\em Update Player on left mouse click. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_player_a524a0fd1d55d4ac0a55d00d0492018f8}{Accept}} (\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$visitor)
+\item 
+void \mbox{\hyperlink{class_c_player_ad2b110ed9eee0e66013110ce645b2e92}{Regenerate}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_pens}{C\+Pens}} $>$ pen)
+\begin{DoxyCompactList}\small\item\em Function that generates the pen. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_c_player_a92e3942353b9a954fa0ffdfef6de72ca}{Is\+Empty\+Handed}} ()
+\item 
+\mbox{\Hypertarget{class_c_player_adcdf88eae2d68ebb36996e751ea62950}\label{class_c_player_adcdf88eae2d68ebb36996e751ea62950}} 
+void \mbox{\hyperlink{class_c_player_adcdf88eae2d68ebb36996e751ea62950}{Set\+Handedness}} ()
+\begin{DoxyCompactList}\small\item\em Updates to whether or not Player has pen in hand. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_player_aeb60d84df335907e5d0657dbfe314982}{Get\+Elapsed\+Time}} ()
+\item 
+\mbox{\Hypertarget{class_c_player_a69eca138fffd9da731d0f5c19a5bb9cf}\label{class_c_player_a69eca138fffd9da731d0f5c19a5bb9cf}} 
+void \mbox{\hyperlink{class_c_player_a69eca138fffd9da731d0f5c19a5bb9cf}{Set\+Elapsed\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Sets time that has elapsed. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_pens}{C\+Pens}} $>$ \mbox{\hyperlink{class_c_player_afbe9687de700ec4dd9188521508bc917}{Get\+Hold}} ()
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for Player object 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_player_ad48a32c4432da29ef46b3ff6981c122f}\label{class_c_player_ad48a32c4432da29ef46b3ff6981c122f}} 
+\index{CPlayer@{CPlayer}!CPlayer@{CPlayer}}
+\index{CPlayer@{CPlayer}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{CPlayer()}{CPlayer()}}
+{\footnotesize\ttfamily C\+Player\+::\+C\+Player (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{screen }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Constructor 
+\begin{DoxyParams}{Parameters}
+{\em screen} & Screen this Player is a member of \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_player_a524a0fd1d55d4ac0a55d00d0492018f8}\label{class_c_player_a524a0fd1d55d4ac0a55d00d0492018f8}} 
+\index{CPlayer@{CPlayer}!Accept@{Accept}}
+\index{Accept@{Accept}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{Accept()}{Accept()}}
+{\footnotesize\ttfamily void C\+Player\+::\+Accept (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_visitor}{C\+Visitor}} $\ast$}]{visitor }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Accept a visitor 
+\begin{DoxyParams}{Parameters}
+{\em visitor} & The visitor for this object \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_image_object_a7130a9fa130c2028aba6c28dcfc876d5}{C\+Image\+Object}}.
+
+\mbox{\Hypertarget{class_c_player_aeb60d84df335907e5d0657dbfe314982}\label{class_c_player_aeb60d84df335907e5d0657dbfe314982}} 
+\index{CPlayer@{CPlayer}!GetElapsedTime@{GetElapsedTime}}
+\index{GetElapsedTime@{GetElapsedTime}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{GetElapsedTime()}{GetElapsedTime()}}
+{\footnotesize\ttfamily double C\+Player\+::\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Gets time that has elapsed \begin{DoxyReturn}{Returns}
+double The time that has elapsed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_player_afbe9687de700ec4dd9188521508bc917}\label{class_c_player_afbe9687de700ec4dd9188521508bc917}} 
+\index{CPlayer@{CPlayer}!GetHold@{GetHold}}
+\index{GetHold@{GetHold}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{GetHold()}{GetHold()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$\mbox{\hyperlink{class_c_pens}{C\+Pens}}$>$ C\+Player\+::\+Get\+Hold (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for hold \begin{DoxyReturn}{Returns}
+std\+::shared\+\_\+ptr$<$\+C\+Pens$>$ The pen the player is holding 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_player_a92e3942353b9a954fa0ffdfef6de72ca}\label{class_c_player_a92e3942353b9a954fa0ffdfef6de72ca}} 
+\index{CPlayer@{CPlayer}!IsEmptyHanded@{IsEmptyHanded}}
+\index{IsEmptyHanded@{IsEmptyHanded}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{IsEmptyHanded()}{IsEmptyHanded()}}
+{\footnotesize\ttfamily bool C\+Player\+::\+Is\+Empty\+Handed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+True if Player has no pen in his hand \begin{DoxyReturn}{Returns}
+bool If the player is empty handed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_player_ad2b110ed9eee0e66013110ce645b2e92}\label{class_c_player_ad2b110ed9eee0e66013110ce645b2e92}} 
+\index{CPlayer@{CPlayer}!Regenerate@{Regenerate}}
+\index{Regenerate@{Regenerate}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{Regenerate()}{Regenerate()}}
+{\footnotesize\ttfamily void C\+Player\+::\+Regenerate (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_pens}{C\+Pens}} $>$}]{pen }\end{DoxyParamCaption})}
+
+
+
+Function that generates the pen. 
+
+Generate new pen \mbox{\Hypertarget{class_c_player_a5e44aa329b892f90bf8eb7aa38155d50}\label{class_c_player_a5e44aa329b892f90bf8eb7aa38155d50}} 
+\index{CPlayer@{CPlayer}!RotateImage@{RotateImage}}
+\index{RotateImage@{RotateImage}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{RotateImage()}{RotateImage()}}
+{\footnotesize\ttfamily void C\+Player\+::\+Rotate\+Image (\begin{DoxyParamCaption}\item[{C\+Point}]{point }\end{DoxyParamCaption})}
+
+
+
+Rotate Harold and Pen. 
+
+Rotate our Player 
+\begin{DoxyParams}{Parameters}
+{\em point} & Vector of mouse location \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_player_a6cd750cb5f29c4d8615c936ab537a8c2}\label{class_c_player_a6cd750cb5f29c4d8615c936ab537a8c2}} 
+\index{CPlayer@{CPlayer}!ShootPen@{ShootPen}}
+\index{ShootPen@{ShootPen}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{ShootPen()}{ShootPen()}}
+{\footnotesize\ttfamily void C\+Player\+::\+Shoot\+Pen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Shoot pen. 
+
+Shoot the pen in Player\textquotesingle{}s hand \mbox{\Hypertarget{class_c_player_a0a17b9e8c553dcf8a97b5ed6070ad560}\label{class_c_player_a0a17b9e8c553dcf8a97b5ed6070ad560}} 
+\index{CPlayer@{CPlayer}!Update@{Update}}
+\index{Update@{Update}!CPlayer@{CPlayer}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Player\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Update Player on left mouse click. 
+
+Track time since pen shot 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & time elapsed \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{class_c_screen_object_ab682c1e08f001e666f0cec280e1e9eaa}{C\+Screen\+Object}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_player_8h}{Player.\+h}}\item 
+\mbox{\hyperlink{_player_8cpp}{Player.\+cpp}}\end{DoxyCompactItemize}

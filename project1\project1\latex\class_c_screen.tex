@@ -1,0 +1,255 @@
+\hypertarget{class_c_screen}{}\section{C\+Screen Class Reference}
+\label{class_c_screen}\index{CScreen@{CScreen}}
+
+
+{\ttfamily \#include $<$Screen.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_screen_ac2dfca02f82f6f2943ee601952bf5915}{C\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_a2d02802a101125358a8e74c1c9c9f762}\label{class_c_screen_a2d02802a101125358a8e74c1c9c9f762}} 
+void \mbox{\hyperlink{class_c_screen_a2d02802a101125358a8e74c1c9c9f762}{Load}} ()
+\begin{DoxyCompactList}\small\item\em Load the uml. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_a7330032366cc5f03c66f627ccda222a6}\label{class_c_screen_a7330032366cc5f03c66f627ccda222a6}} 
+virtual \mbox{\hyperlink{class_c_screen_a7330032366cc5f03c66f627ccda222a6}{$\sim$\+C\+Screen}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_ae6ee0263e8cd99293612076ed50974e0}\label{class_c_screen_ae6ee0263e8cd99293612076ed50974e0}} 
+\mbox{\hyperlink{class_c_screen_ae6ee0263e8cd99293612076ed50974e0}{C\+Screen}} (const \mbox{\hyperlink{class_c_screen}{C\+Screen}} \&)=delete
+\begin{DoxyCompactList}\small\item\em Deleted constructor. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_c_screen_a592f32768220e63f75608945acd04751}{Get\+Width}} () const
+\item 
+int \mbox{\hyperlink{class_c_screen_a1bde3a61effc114f5d859b0ffb237b75}{Get\+Height}} () const
+\item 
+int \mbox{\hyperlink{class_c_screen_aaf50096762a0d8cd83b89637d8be7147}{Get\+Screen\+Object\+Count}} () const
+\item 
+\mbox{\Hypertarget{class_c_screen_a85e91bd50b59620f4ef888f096e2cf36}\label{class_c_screen_a85e91bd50b59620f4ef888f096e2cf36}} 
+void \mbox{\hyperlink{class_c_screen_a85e91bd50b59620f4ef888f096e2cf36}{Set\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em Sets screen background to pause state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_afa4e0ec5258a2481d6448e8efef70616}\label{class_c_screen_afa4e0ec5258a2481d6448e8efef70616}} 
+bool \mbox{\hyperlink{class_c_screen_afa4e0ec5258a2481d6448e8efef70616}{Get\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em Getter for pause bool. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_screen_a1ccd1275b0225982e2a86034425fc95c}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics, int width, int height)
+\begin{DoxyCompactList}\small\item\em Draws the screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_screen_a12ada444c474754438b99d1a39bb5c70}{Add\+Screen\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$ new\+Screen\+Object)
+\item 
+void \mbox{\hyperlink{class_c_screen_a5418c3a3041dfbd8afad9ddb28ad5cd8}{Remove\+Screen\+Object}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$ target)
+\item 
+bool \mbox{\hyperlink{class_c_screen_aede27a1651d308fa5c75d62266146225}{Hit\+Test}} (int x, int y)
+\begin{DoxyCompactList}\small\item\em Hit test for screen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_screen_abb87ac8a63d45684c7ad6e4410be7583}{Update}} (double elapsed)
+\item 
+void \mbox{\hyperlink{class_c_screen_a9eeb298494ea922c2a803f09a4933935}{Rotate\+Screen\+Objects}} (C\+Point point)
+\item 
+\mbox{\Hypertarget{class_c_screen_a61897cc3fce79e9c3965e2c27d86e415}\label{class_c_screen_a61897cc3fce79e9c3965e2c27d86e415}} 
+void \mbox{\hyperlink{class_c_screen_a61897cc3fce79e9c3965e2c27d86e415}{Sort\+Screen\+Objects}} ()
+\begin{DoxyCompactList}\small\item\em Sorts screen objects by their screen layer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_a2e9a5959e766bdae40facec7390add14}\label{class_c_screen_a2e9a5959e766bdae40facec7390add14}} 
+void \mbox{\hyperlink{class_c_screen_a2e9a5959e766bdae40facec7390add14}{Shoot}} ()
+\begin{DoxyCompactList}\small\item\em Shoot pen \& set timer to regenerate. \end{DoxyCompactList}\item 
+C\+Point \mbox{\hyperlink{class_c_screen_a1ae61bc753806e18b44b3e1360611409}{Fix\+Mouse\+Coordinates}} (C\+Point \&point)
+\item 
+void \mbox{\hyperlink{class_c_screen_accc394df9102d2a11b87420deea1d83f}{Collision}} ()
+\begin{DoxyCompactList}\small\item\em Determines if two screen items collided. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_a314001f8132de9da1840ac6e85e7f5a4}\label{class_c_screen_a314001f8132de9da1840ac6e85e7f5a4}} 
+double \mbox{\hyperlink{class_c_screen_a314001f8132de9da1840ac6e85e7f5a4}{Get\+ScreenX}} ()
+\begin{DoxyCompactList}\small\item\em Getter for Screen X value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_a1c5a11c6958fd78a46a68f33eaa4b376}\label{class_c_screen_a1c5a11c6958fd78a46a68f33eaa4b376}} 
+double \mbox{\hyperlink{class_c_screen_a1c5a11c6958fd78a46a68f33eaa4b376}{Get\+ScreenY}} ()
+\begin{DoxyCompactList}\small\item\em Getter for Screen Y value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_a483c77121786543b4047874217d33b73}\label{class_c_screen_a483c77121786543b4047874217d33b73}} 
+void \mbox{\hyperlink{class_c_screen_a483c77121786543b4047874217d33b73}{On\+Pause}} ()
+\begin{DoxyCompactList}\small\item\em On screen paused. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_screen_a773492fc00dd2816841043f5b6b97107}{Add}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$ item)
+\item 
+\mbox{\Hypertarget{class_c_screen_a9702a83af1519840745c4584b3a28f4c}\label{class_c_screen_a9702a83af1519840745c4584b3a28f4c}} 
+void \mbox{\hyperlink{class_c_screen_a9702a83af1519840745c4584b3a28f4c}{Set\+New\+Speed}} (double speed)
+\begin{DoxyCompactList}\small\item\em Setter for new box speed. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{class_c_screen_a8ec35e05509f898ec58cc6aefbbb3389}{Get\+New\+Speed}} ()
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_screen_a91a8f0e25ceb9d9814a755f23e08fe32}\label{class_c_screen_a91a8f0e25ceb9d9814a755f23e08fe32}} 
+static const int \mbox{\hyperlink{class_c_screen_a91a8f0e25ceb9d9814a755f23e08fe32}{Width}} = 1250
+\begin{DoxyCompactList}\small\item\em Game area in virtual pixels. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_screen_ae270120f33049f967f11218de5e37363}\label{class_c_screen_ae270120f33049f967f11218de5e37363}} 
+static const int \mbox{\hyperlink{class_c_screen_ae270120f33049f967f11218de5e37363}{Height}} = 1000
+\begin{DoxyCompactList}\small\item\em Game area height in virtual pixels. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class for the Game Screen 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_screen_ac2dfca02f82f6f2943ee601952bf5915}\label{class_c_screen_ac2dfca02f82f6f2943ee601952bf5915}} 
+\index{CScreen@{CScreen}!CScreen@{CScreen}}
+\index{CScreen@{CScreen}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{CScreen()}{CScreen()}}
+{\footnotesize\ttfamily C\+Screen\+::\+C\+Screen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+Game Screen Constructor 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_screen_a773492fc00dd2816841043f5b6b97107}\label{class_c_screen_a773492fc00dd2816841043f5b6b97107}} 
+\index{CScreen@{CScreen}!Add@{Add}}
+\index{Add@{Add}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void C\+Screen\+::\+Add (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$}]{item }\end{DoxyParamCaption})}
+
+Add screen object to vector 
+\begin{DoxyParams}{Parameters}
+{\em item} & screen object item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_a12ada444c474754438b99d1a39bb5c70}\label{class_c_screen_a12ada444c474754438b99d1a39bb5c70}} 
+\index{CScreen@{CScreen}!AddScreenObject@{AddScreenObject}}
+\index{AddScreenObject@{AddScreenObject}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{AddScreenObject()}{AddScreenObject()}}
+{\footnotesize\ttfamily void C\+Screen\+::\+Add\+Screen\+Object (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$}]{new\+Screen\+Object }\end{DoxyParamCaption})}
+
+Adds a screen object 
+\begin{DoxyParams}{Parameters}
+{\em new\+Screen\+Object} & new screen object item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_accc394df9102d2a11b87420deea1d83f}\label{class_c_screen_accc394df9102d2a11b87420deea1d83f}} 
+\index{CScreen@{CScreen}!Collision@{Collision}}
+\index{Collision@{Collision}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{Collision()}{Collision()}}
+{\footnotesize\ttfamily void C\+Screen\+::\+Collision (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Determines if two screen items collided. 
+
+Need some way to tell apart pens that have been shot then \mbox{\Hypertarget{class_c_screen_a1ccd1275b0225982e2a86034425fc95c}\label{class_c_screen_a1ccd1275b0225982e2a86034425fc95c}} 
+\index{CScreen@{CScreen}!Draw@{Draw}}
+\index{Draw@{Draw}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Screen\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+
+
+Draws the screen. 
+
+Draw the game area 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & The G\+D\+I+ graphics context to draw on \\
+\hline
+{\em width} & Width of the client window \\
+\hline
+{\em height} & Height of the client window \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_a1ae61bc753806e18b44b3e1360611409}\label{class_c_screen_a1ae61bc753806e18b44b3e1360611409}} 
+\index{CScreen@{CScreen}!FixMouseCoordinates@{FixMouseCoordinates}}
+\index{FixMouseCoordinates@{FixMouseCoordinates}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{FixMouseCoordinates()}{FixMouseCoordinates()}}
+{\footnotesize\ttfamily C\+Point C\+Screen\+::\+Fix\+Mouse\+Coordinates (\begin{DoxyParamCaption}\item[{C\+Point \&}]{point }\end{DoxyParamCaption})}
+
+Scales the mouse position to the screen size 
+\begin{DoxyParams}{Parameters}
+{\em point} & to scale \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_a1bde3a61effc114f5d859b0ffb237b75}\label{class_c_screen_a1bde3a61effc114f5d859b0ffb237b75}} 
+\index{CScreen@{CScreen}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int C\+Screen\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the height of the aquarium \begin{DoxyReturn}{Returns}
+Aquarium height 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_a8ec35e05509f898ec58cc6aefbbb3389}\label{class_c_screen_a8ec35e05509f898ec58cc6aefbbb3389}} 
+\index{CScreen@{CScreen}!GetNewSpeed@{GetNewSpeed}}
+\index{GetNewSpeed@{GetNewSpeed}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{GetNewSpeed()}{GetNewSpeed()}}
+{\footnotesize\ttfamily double C\+Screen\+::\+Get\+New\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for new box speed \begin{DoxyReturn}{Returns}
+new speed 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_aaf50096762a0d8cd83b89637d8be7147}\label{class_c_screen_aaf50096762a0d8cd83b89637d8be7147}} 
+\index{CScreen@{CScreen}!GetScreenObjectCount@{GetScreenObjectCount}}
+\index{GetScreenObjectCount@{GetScreenObjectCount}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{GetScreenObjectCount()}{GetScreenObjectCount()}}
+{\footnotesize\ttfamily int C\+Screen\+::\+Get\+Screen\+Object\+Count (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the number of screen\+Objects on the screen \begin{DoxyReturn}{Returns}
+the number of screen\+Objects 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_a592f32768220e63f75608945acd04751}\label{class_c_screen_a592f32768220e63f75608945acd04751}} 
+\index{CScreen@{CScreen}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int C\+Screen\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Get the width of the aquarium \begin{DoxyReturn}{Returns}
+Aquarium width 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_aede27a1651d308fa5c75d62266146225}\label{class_c_screen_aede27a1651d308fa5c75d62266146225}} 
+\index{CScreen@{CScreen}!HitTest@{HitTest}}
+\index{HitTest@{HitTest}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{HitTest()}{HitTest()}}
+{\footnotesize\ttfamily bool C\+Screen\+::\+Hit\+Test (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+
+
+Hit test for screen. 
+
+Test an x,y click location to see if it clicked on some item in the aquarium. 
+\begin{DoxyParams}{Parameters}
+{\em x} & X location \\
+\hline
+{\em y} & Y location \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+boolean whether the x and y coordinates are within the screen. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_screen_a5418c3a3041dfbd8afad9ddb28ad5cd8}\label{class_c_screen_a5418c3a3041dfbd8afad9ddb28ad5cd8}} 
+\index{CScreen@{CScreen}!RemoveScreenObject@{RemoveScreenObject}}
+\index{RemoveScreenObject@{RemoveScreenObject}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{RemoveScreenObject()}{RemoveScreenObject()}}
+{\footnotesize\ttfamily void C\+Screen\+::\+Remove\+Screen\+Object (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_screen_object}{C\+Screen\+Object}} $>$}]{target }\end{DoxyParamCaption})}
+
+Removes a screen object 
+\begin{DoxyParams}{Parameters}
+{\em target} & existing screen object item \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_a9eeb298494ea922c2a803f09a4933935}\label{class_c_screen_a9eeb298494ea922c2a803f09a4933935}} 
+\index{CScreen@{CScreen}!RotateScreenObjects@{RotateScreenObjects}}
+\index{RotateScreenObjects@{RotateScreenObjects}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{RotateScreenObjects()}{RotateScreenObjects()}}
+{\footnotesize\ttfamily void C\+Screen\+::\+Rotate\+Screen\+Objects (\begin{DoxyParamCaption}\item[{C\+Point}]{point }\end{DoxyParamCaption})}
+
+Rotate Screen Objects 
+\begin{DoxyParams}{Parameters}
+{\em point} & system point x/y \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_screen_abb87ac8a63d45684c7ad6e4410be7583}\label{class_c_screen_abb87ac8a63d45684c7ad6e4410be7583}} 
+\index{CScreen@{CScreen}!Update@{Update}}
+\index{Update@{Update}!CScreen@{CScreen}}
+\subsubsection{\texorpdfstring{Update()}{Update()}}
+{\footnotesize\ttfamily void C\+Screen\+::\+Update (\begin{DoxyParamCaption}\item[{double}]{elapsed }\end{DoxyParamCaption})}
+
+Handle updates for animation 
+\begin{DoxyParams}{Parameters}
+{\em elapsed} & The time since the last update \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_screen_8h}{Screen.\+h}}\item 
+\mbox{\hyperlink{_screen_8cpp}{Screen.\+cpp}}\end{DoxyCompactItemize}

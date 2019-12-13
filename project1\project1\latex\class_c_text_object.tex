@@ -1,0 +1,81 @@
+\hypertarget{class_c_text_object}{}\section{C\+Text\+Object Class Reference}
+\label{class_c_text_object}\index{CTextObject@{CTextObject}}
+
+
+{\ttfamily \#include $<$Text\+Object.\+h$>$}
+
+Inheritance diagram for C\+Text\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=4.000000cm]{class_c_text_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_c_text_object_a467038e52d2e587083526cc42a76131f}\label{class_c_text_object_a467038e52d2e587083526cc42a76131f}} 
+virtual void \mbox{\hyperlink{class_c_text_object_a467038e52d2e587083526cc42a76131f}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\begin{DoxyCompactList}\small\item\em draws the text object \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_text_object_a66962cb3d0c16793618834d8a3a66e43}\label{class_c_text_object_a66962cb3d0c16793618834d8a3a66e43}} 
+\mbox{\hyperlink{class_c_text_object_a66962cb3d0c16793618834d8a3a66e43}{C\+Text\+Object}} ()=delete
+\begin{DoxyCompactList}\small\item\em default constructor (disabled) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_text_object_a0bf0c37b8c79abb854243d4359ba12e1}\label{class_c_text_object_a0bf0c37b8c79abb854243d4359ba12e1}} 
+\mbox{\hyperlink{class_c_text_object_a0bf0c37b8c79abb854243d4359ba12e1}{C\+Text\+Object}} (const \mbox{\hyperlink{class_c_text_object}{C\+Text\+Object}} \&)=delete
+\begin{DoxyCompactList}\small\item\em copy constructor (disabled) \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{class_c_text_object_aa72faa5c71d011c108146d678faafb63}{Rotate\+Image}} (C\+Point point)
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_c_text_object_a271093e58df49cce685e4ed388a41606}{C\+Text\+Object}} (\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$screen, \mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}} layer, wstring text, double size)
+\item 
+\mbox{\Hypertarget{class_c_text_object_a04cc77705f158b9a9bb767103346630b}\label{class_c_text_object_a04cc77705f158b9a9bb767103346630b}} 
+void \mbox{\hyperlink{class_c_text_object_a04cc77705f158b9a9bb767103346630b}{Set\+Text}} (const wstring new\+Text)
+\begin{DoxyCompactList}\small\item\em Sets the text to display. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_c_text_object_a623070e9b808c4898cc101c247fc6a3c}\label{class_c_text_object_a623070e9b808c4898cc101c247fc6a3c}} 
+void {\bfseries Set\+Brush} (Gdiplus\+::\+Solid\+Brush $\ast$new\+Brush)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+Class for screen\+Objects which include text 
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_c_text_object_a271093e58df49cce685e4ed388a41606}\label{class_c_text_object_a271093e58df49cce685e4ed388a41606}} 
+\index{CTextObject@{CTextObject}!CTextObject@{CTextObject}}
+\index{CTextObject@{CTextObject}!CTextObject@{CTextObject}}
+\subsubsection{\texorpdfstring{CTextObject()}{CTextObject()}}
+{\footnotesize\ttfamily C\+Text\+Object\+::\+C\+Text\+Object (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_c_screen}{C\+Screen}} $\ast$}]{screen,  }\item[{\mbox{\hyperlink{_screen_layers_8h_ac283065f0e546466dc00cf224c28d5ac}{Screen\+Layers}}}]{layer,  }\item[{wstring}]{text = {\ttfamily L\char`\"{}\char`\"{}},  }\item[{double}]{size = {\ttfamily 12} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [protected]}}
+
+constructs a text object 
+\begin{DoxyParams}{Parameters}
+{\em screen} & the screen we are playing on \\
+\hline
+{\em text} & the text written on the screen \\
+\hline
+{\em size} & the size of the text on the screen \\
+\hline
+{\em layer} & the layer the image is in \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_text_object_aa72faa5c71d011c108146d678faafb63}\label{class_c_text_object_aa72faa5c71d011c108146d678faafb63}} 
+\index{CTextObject@{CTextObject}!RotateImage@{RotateImage}}
+\index{RotateImage@{RotateImage}!CTextObject@{CTextObject}}
+\subsubsection{\texorpdfstring{RotateImage()}{RotateImage()}}
+{\footnotesize\ttfamily void C\+Text\+Object\+::\+Rotate\+Image (\begin{DoxyParamCaption}\item[{C\+Point}]{point }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+Rotate function for pause 
+\begin{DoxyParams}{Parameters}
+{\em point} & Vector of mouse location \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_text_object_8h}{Text\+Object.\+h}}\item 
+\mbox{\hyperlink{_text_object_8cpp}{Text\+Object.\+cpp}}\end{DoxyCompactItemize}

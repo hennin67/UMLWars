@@ -1,0 +1,123 @@
+\hypertarget{class_c_emission}{}\section{C\+Emission Class Reference}
+\label{class_c_emission}\index{CEmission@{CEmission}}
+
+
+{\ttfamily \#include $<$Emission.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{class_c_emission_a92780d636d312e6e690537bf998bb6b4}{GetX}} () const
+\item 
+double \mbox{\hyperlink{class_c_emission_a178c4908ee2d2012556a0555c2eacef1}{GetY}} () const
+\item 
+virtual void \mbox{\hyperlink{class_c_emission_aad1f5c4fdc7c7ba286f17dd1cd43062d}{Draw}} (Gdiplus\+::\+Graphics $\ast$graphics)
+\item 
+void \mbox{\hyperlink{class_c_emission_a7e9bc8eacb04a716a41cd10e2ed81b9d}{On\+Draw}} (Gdiplus\+::\+Graphics $\ast$graphics, int width, int height)
+\item 
+int \mbox{\hyperlink{class_c_emission_a0a072a7fe378f16f9daed81dc875d722}{Get\+Width}} () const
+\item 
+int \mbox{\hyperlink{class_c_emission_af7f9f8206ef015c9ba50684f6ae1246b}{Get\+Height}} () const
+\item 
+void \mbox{\hyperlink{class_c_emission_aceed4a30851d5f48ba1f7e385913ade0}{On\+L\+Button\+Down}} (int x, int y)
+\item 
+void \mbox{\hyperlink{class_c_emission_ae2d5dd9c4317bf3bc59f956e66236e17}{Add}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_emission}{C\+Emission}} $>$ emission)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class that describes an emission object. 
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{class_c_emission_ae2d5dd9c4317bf3bc59f956e66236e17}\label{class_c_emission_ae2d5dd9c4317bf3bc59f956e66236e17}} 
+\index{CEmission@{CEmission}!Add@{Add}}
+\index{Add@{Add}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{Add()}{Add()}}
+{\footnotesize\ttfamily void C\+Emission\+::\+Add (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{class_c_emission}{C\+Emission}} $>$}]{emission }\end{DoxyParamCaption})}
+
+Add emission to items 
+\begin{DoxyParams}{Parameters}
+{\em emission} & to add to items \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_emission_aad1f5c4fdc7c7ba286f17dd1cd43062d}\label{class_c_emission_aad1f5c4fdc7c7ba286f17dd1cd43062d}} 
+\index{CEmission@{CEmission}!Draw@{Draw}}
+\index{Draw@{Draw}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{Draw()}{Draw()}}
+{\footnotesize\ttfamily void C\+Emission\+::\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+Draw graphics 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & G\+D\+I+ graphics \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_emission_af7f9f8206ef015c9ba50684f6ae1246b}\label{class_c_emission_af7f9f8206ef015c9ba50684f6ae1246b}} 
+\index{CEmission@{CEmission}!GetHeight@{GetHeight}}
+\index{GetHeight@{GetHeight}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{GetHeight()}{GetHeight()}}
+{\footnotesize\ttfamily int C\+Emission\+::\+Get\+Height (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for height \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_emission_a0a072a7fe378f16f9daed81dc875d722}\label{class_c_emission_a0a072a7fe378f16f9daed81dc875d722}} 
+\index{CEmission@{CEmission}!GetWidth@{GetWidth}}
+\index{GetWidth@{GetWidth}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{GetWidth()}{GetWidth()}}
+{\footnotesize\ttfamily int C\+Emission\+::\+Get\+Width (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for width \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_emission_a92780d636d312e6e690537bf998bb6b4}\label{class_c_emission_a92780d636d312e6e690537bf998bb6b4}} 
+\index{CEmission@{CEmission}!GetX@{GetX}}
+\index{GetX@{GetX}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{GetX()}{GetX()}}
+{\footnotesize\ttfamily double C\+Emission\+::\+GetX (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for X position \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_emission_a178c4908ee2d2012556a0555c2eacef1}\label{class_c_emission_a178c4908ee2d2012556a0555c2eacef1}} 
+\index{CEmission@{CEmission}!GetY@{GetY}}
+\index{GetY@{GetY}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{GetY()}{GetY()}}
+{\footnotesize\ttfamily double C\+Emission\+::\+GetY (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+Getter for Y position \begin{DoxyReturn}{Returns}
+int 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_c_emission_a7e9bc8eacb04a716a41cd10e2ed81b9d}\label{class_c_emission_a7e9bc8eacb04a716a41cd10e2ed81b9d}} 
+\index{CEmission@{CEmission}!OnDraw@{OnDraw}}
+\index{OnDraw@{OnDraw}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{OnDraw()}{OnDraw()}}
+{\footnotesize\ttfamily void C\+Emission\+::\+On\+Draw (\begin{DoxyParamCaption}\item[{Gdiplus\+::\+Graphics $\ast$}]{graphics,  }\item[{int}]{width,  }\item[{int}]{height }\end{DoxyParamCaption})}
+
+Draws the emissions 
+\begin{DoxyParams}{Parameters}
+{\em graphics} & the gdi+ graphics object to display to \\
+\hline
+{\em width} & width of emission \\
+\hline
+{\em height} & height of emission \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{class_c_emission_aceed4a30851d5f48ba1f7e385913ade0}\label{class_c_emission_aceed4a30851d5f48ba1f7e385913ade0}} 
+\index{CEmission@{CEmission}!OnLButtonDown@{OnLButtonDown}}
+\index{OnLButtonDown@{OnLButtonDown}!CEmission@{CEmission}}
+\subsubsection{\texorpdfstring{OnLButtonDown()}{OnLButtonDown()}}
+{\footnotesize\ttfamily void C\+Emission\+::\+On\+L\+Button\+Down (\begin{DoxyParamCaption}\item[{int}]{x,  }\item[{int}]{y }\end{DoxyParamCaption})}
+
+On click 
+\begin{DoxyParams}{Parameters}
+{\em x} & pos x \\
+\hline
+{\em y} & pos y \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_emission_8h}{Emission.\+h}}\item 
+\mbox{\hyperlink{_emission_8cpp}{Emission.\+cpp}}\end{DoxyCompactItemize}
